@@ -6,20 +6,20 @@ InputManager:
   serializedVersion: 2
   m_Axes:
   - serializedVersion: 3
-    m_Name: R_Horizontal
-    descriptiveName: Stick R left/right
+    m_Name: Horizontal
+    descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
-    altNegativeButton: 
-    altPositiveButton: 
+    negativeButton: left
+    positiveButton: right
+    altNegativeButton: a
+    altPositiveButton: b
     gravity: 3
-    dead: 0.19
-    sensitivity: 1
-    snap: 0
+    dead: 0.001
+    sensitivity: 3
+    snap: 1
     invert: 0
-    type: 2
-    axis: 3
+    type: 0
+    axis: 0
     joyNum: 0
   - serializedVersion: 3
     m_Name: Vertical
@@ -299,6 +299,22 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 3
+    joyNum: 0
+  - serializedVersion: 3
+    m_Name: Throw
+    descriptiveName: Stick B
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick button 0
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0

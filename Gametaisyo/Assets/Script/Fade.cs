@@ -21,7 +21,7 @@ public class Fade : MonoBehaviour
 
     void Update()
     {
-        if (frameCount > 2)
+        if (frameCount > 3)
         {
             if (fadeIn)
             {

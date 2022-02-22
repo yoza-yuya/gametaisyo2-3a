@@ -13,11 +13,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Wall
+  - Player
+  - Item
+  - Enemy
+  - Map
   - 
   - 
   - 

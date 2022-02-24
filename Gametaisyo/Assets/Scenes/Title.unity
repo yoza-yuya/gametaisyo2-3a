@@ -339,6 +339,7 @@ GameObject:
   - component: {fileID: 483120470}
   - component: {fileID: 483120474}
   - component: {fileID: 483120475}
+  - component: {fileID: 483120476}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -461,6 +462,18 @@ MonoBehaviour:
   i: 0
   sound: {fileID: 0}
   sound2: {fileID: 0}
+--- !u!114 &483120476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483120469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5de5132a54ddd14dbd04615c1597c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &578180117
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,7 +632,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 669028657}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: d5de5132a54ddd14dbd04615c1597c6a, type: 3}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &669028657
 MonoBehaviour:
   m_ObjectHideFlags: 0

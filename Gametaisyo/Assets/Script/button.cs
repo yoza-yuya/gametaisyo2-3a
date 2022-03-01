@@ -53,10 +53,6 @@ public class button : MonoBehaviour
         {
             Debug.Log("button9");
         }
-        if (Input.GetKeyDown("joystick button 10"))
-        {
-            Debug.Log("button10");
-        }
         if (Input.GetKeyDown("joystick button 11"))
         {
             Debug.Log("button9");
@@ -72,6 +68,24 @@ public class button : MonoBehaviour
         if (Input.GetKeyDown("joystick button 14"))
         {
             Debug.Log("button14");
+        }
+        if (Input.GetKeyDown("joystick button 15"))
+        {
+            Debug.Log("button15");
+        }
+
+        float tri = Input.GetAxis("Trigger");
+        if (tri > 0)
+        {
+            Debug.Log("左");
+        }
+        else if (tri < 0)
+        {
+            Debug.Log("右");
+        }
+        else
+        {
+            //Debug.Log("何もなし？");
         }
     }
 }

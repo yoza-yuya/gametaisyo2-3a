@@ -9,11 +9,17 @@ public class Shoot : MonoBehaviour
     public float shotSpeed;
     private float shotInterval;
 
+    private float timeBetweenShot = 3.00f;
+    private float timer;
+    
+
     void Update()
     {
-            if (Input.GetButtonDown("Fire 1"))
-            {
-
+        timer += Time.deltaTime;
+        float tri = Input.GetAxis("Trigger");
+        if (tri > 0 && timer > timeBetweenShot)
+        {
+                timer = 0.0f;
 
                 GameObject bullet = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.Euler(transform.parent.eulerAngles.x, transform.parent.eulerAngles.y, 0));
                 Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
@@ -21,7 +27,7 @@ public class Shoot : MonoBehaviour
 
                 //射撃されてから3秒後に銃弾のオブジェクトを破壊する.
 
-                Destroy(bullet, 3.0f);
+                Destroy(bullet, 1.0f);
             }
     }
 }

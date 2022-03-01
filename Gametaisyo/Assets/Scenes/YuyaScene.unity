@@ -699,6 +699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1419537624}
   - component: {fileID: 1419537625}
+  - component: {fileID: 1419537626}
   m_Layer: 0
   m_Name: Shooting
   m_TagString: Untagged
@@ -734,7 +735,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 8665736454254402085, guid: 4605613f5cf063648b52b30c185f51db,
     type: 3}
-  shotSpeed: 600
+  shotSpeed: 700
+--- !u!114 &1419537626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419537623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07517e76d93302b4b99eb3e90b711f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1616739486
 GameObject:
   m_ObjectHideFlags: 0

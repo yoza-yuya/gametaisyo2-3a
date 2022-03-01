@@ -7,8 +7,8 @@ public class SikakuCamera : MonoBehaviour
 
     private GameObject mainCamera;      //メインカメラ格納用
     private GameObject subCamera;       //サブカメラ格納用 
-    private float EffectiveTime = 10f;   //効果時間
-    private float time;
+    private float EffectiveTime = 10;   //効果時間
+    private float time = 0;
 
     void Start()
     {
@@ -26,8 +26,7 @@ public class SikakuCamera : MonoBehaviour
         //スペースキーが押されてから
         if (Input.GetKey(KeyCode.A))
         {
-            //押してからの時間が効果時間を超えるまで
-            while (time>EffectiveTime)
+            if(EffectiveTime < time)
              {
             //サブカメラをアクティブに設定
             mainCamera.SetActive(false);

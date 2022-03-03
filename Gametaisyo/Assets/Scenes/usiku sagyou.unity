@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 83254897}
   - component: {fileID: 83254896}
+  - component: {fileID: 83254898}
   m_Layer: 0
   m_Name: CameraMaster
   m_TagString: Untagged
@@ -164,6 +165,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &83254898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83254895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596bb34d2d5fd084ca430428df3aab06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &109216747
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +279,7 @@ GameObject:
   - component: {fileID: 136981854}
   - component: {fileID: 136981853}
   m_Layer: 10
-  m_Name: Item (2)
+  m_Name: Tyoukaku
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -284,7 +297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596bb34d2d5fd084ca430428df3aab06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroyFlg: 0
 --- !u!136 &136981854
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -448,7 +460,7 @@ GameObject:
   - component: {fileID: 402873431}
   - component: {fileID: 402873436}
   m_Layer: 10
-  m_Name: Item
+  m_Name: Sikaku
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -541,7 +553,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596bb34d2d5fd084ca430428df3aab06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroyFlg: 0
 --- !u!1 &447136723
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,7 +765,7 @@ GameObject:
   - component: {fileID: 603973392}
   - component: {fileID: 603973391}
   m_Layer: 10
-  m_Name: Item (1)
+  m_Name: Kyuukaku
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -772,7 +783,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596bb34d2d5fd084ca430428df3aab06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroyFlg: 0
 --- !u!136 &603973392
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1466,7 +1476,7 @@ GameObject:
   - component: {fileID: 1412071506}
   - component: {fileID: 1412071505}
   m_Layer: 10
-  m_Name: Item (3)
+  m_Name: Kyuukaku
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1484,7 +1494,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596bb34d2d5fd084ca430428df3aab06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroyFlg: 0
 --- !u!136 &1412071506
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1789,7 +1798,7 @@ GameObject:
   - component: {fileID: 1613805760}
   - component: {fileID: 1613805759}
   m_Layer: 10
-  m_Name: Item (4)
+  m_Name: MIkaku
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1807,7 +1816,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596bb34d2d5fd084ca430428df3aab06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroyFlg: 0
 --- !u!136 &1613805760
 CapsuleCollider:
   m_ObjectHideFlags: 0

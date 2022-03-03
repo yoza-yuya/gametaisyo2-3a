@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Item
   - Enemy
+  - Wall
+  - Light
   layers:
   - Default
   - TransparentFX

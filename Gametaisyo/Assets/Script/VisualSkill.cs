@@ -5,15 +5,19 @@ using System;
 
 public class VisualSkill : MonoBehaviour
 {
-    Renderer ren;
+    Vector3 area;
     private float time = 0f;
+    public int AreaTime = 4;
+    public float Area = 1.8f;
     private int i = 0;
-    public int SkillTime = 5;
     // Start is called before the first frame update
     void Start()
     {
-        ren = GetComponent<Renderer>();
-        ren.enabled = false;
+        area = gameObject.transform.localScale;
+        area.x = 0;
+        area.y = 0;
+        area.z = 0;
+        gameObject.transform.localScale = area;
     }
 
     // Update is called once per frame
@@ -21,18 +25,30 @@ public class VisualSkill : MonoBehaviour
     {
         if (Input.GetKeyDown("joystick button 5"))
         {
-            ren.enabled = true;
             i = 1;
+            Debug.Log("1");
         }
         if (i >= 1)
         {
             time += Time.deltaTime;
+            if (area.x <= 200)
+            {
+                area.x = area.x + Area;
+                area.y = area.y + Area;
+                area.z = area.z + Area;
+                gameObject.transform.localScale = area;
+            }
+            Debug.Log("2");
         }
-        if (time >= SkillTime)
+        if (time >= AreaTime)
         {
-            ren.enabled = false;
             time = 0f;
+            area.x = 0;
+            area.y = 0;
+            area.z = 0;
+            gameObject.transform.localScale = area;
             i = 0;
+            Debug.Log("3");
         }
     }
 }

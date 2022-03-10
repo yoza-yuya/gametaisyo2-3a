@@ -16,6 +16,9 @@ public class ItemTakeRost : MonoBehaviour
 			// 0.2秒後に消える
 			Debug.Log("触れた");
 			Destroy(gameObject, 0.2f);
+			//GoalOpenスクリプトの呼び出し
+			GameObject director = GameObject.Find("GameDirector");
+			director.GetComponent<GoalOpen>().Goalflg();
 		}
 	}
 }

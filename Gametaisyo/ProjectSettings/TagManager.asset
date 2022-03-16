@@ -8,6 +8,12 @@ TagManager:
   - Wall
   - Bullet
   - Enemy
+  - Light
+  - T
+  - Cross
+  - OppositeT
+  - To
+  - OppositeTo
   layers:
   - Default
   - TransparentFX

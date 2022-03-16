@@ -26,7 +26,6 @@ public class VisualSkill : MonoBehaviour
         if (Input.GetKeyDown("joystick button 5"))
         {
             i = 1;
-            Debug.Log("1");
         }
         if (i >= 1)
         {
@@ -38,7 +37,6 @@ public class VisualSkill : MonoBehaviour
                 area.z = area.z + Area;
                 gameObject.transform.localScale = area;
             }
-            Debug.Log("2");
         }
         if (time >= AreaTime)
         {
@@ -48,7 +46,6 @@ public class VisualSkill : MonoBehaviour
             area.z = 0;
             gameObject.transform.localScale = area;
             i = 0;
-            Debug.Log("3");
         }
     }
 }

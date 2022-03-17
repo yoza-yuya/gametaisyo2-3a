@@ -6,13 +6,14 @@ TagManager:
   tags:
   - Item
   - Wall
-<<<<<<< HEAD
   - Bullet
   - Enemy
-=======
   - Light
-  - Item(mikaku)
->>>>>>> origin/inafuku1
+  - T
+  - Cross
+  - OppositeT
+  - To
+  - OppositeTo
   layers:
   - Default
   - TransparentFX

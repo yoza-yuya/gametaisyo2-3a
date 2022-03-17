@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 128216442}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Player
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -734,6 +734,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596bb34d2d5fd084ca430428df3aab06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1214069354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1214069355}
+  m_Layer: 0
+  m_Name: ItemObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1214069355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214069354}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3, y: 4.5, z: -4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1551559731}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1342854946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -936,6 +966,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BlueItem (mikaku)
+      objectReference: {fileID: 0}
+    - target: {fileID: -2529771136771350600, guid: 8ba76b21d00f18449b253b648d238225,
+        type: 3}
+      propertyPath: m_TagString
+      value: Item(mikaku)
       objectReference: {fileID: 0}
     - target: {fileID: -1909550623240240349, guid: 8ba76b21d00f18449b253b648d238225,
         type: 3}
@@ -1336,8 +1371,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2103335949}
   - component: {fileID: 2103335950}
+  - component: {fileID: 2103335951}
+  - component: {fileID: 2103335952}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: PlayerObject
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1371,6 +1408,35 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2103335951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103335948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcaa917b21b44a64499acd23337ee24e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2103335952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103335948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0351f0718021024382af1285df05e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mikaku: 0
+  sikaku: 0
+  tyoukaku: 0
+  syokkaku: 0
+  kyuukaku: 0
 --- !u!1001 &2826553859611862486
 PrefabInstance:
   m_ObjectHideFlags: 0

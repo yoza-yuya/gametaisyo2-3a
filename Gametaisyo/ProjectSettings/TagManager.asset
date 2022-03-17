@@ -6,8 +6,13 @@ TagManager:
   tags:
   - Item
   - Wall
+<<<<<<< HEAD
   - Bullet
   - Enemy
+=======
+  - Light
+  - Item(mikaku)
+>>>>>>> origin/inafuku1
   layers:
   - Default
   - TransparentFX

@@ -24,7 +24,7 @@ public class SikakuCamera : MonoBehaviour
     void Update()
     {
         //スペースキーが押されてから
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A)&&Input.GetKey(KeyCode.B))
         {
             if(EffectiveTime < time)
              {

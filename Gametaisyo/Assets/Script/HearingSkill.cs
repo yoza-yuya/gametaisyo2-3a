@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class VisualSkill : MonoBehaviour
+public class HearingSkill : MonoBehaviour
 {
     Vector3 area;
     private float time = 0f;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VisualSkillEnemy : MonoBehaviour
+public class HearingSkillEnemy : MonoBehaviour
 {
     Renderer ren;
     private float time = 0f;

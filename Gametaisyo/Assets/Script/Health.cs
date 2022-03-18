@@ -48,15 +48,5 @@ public class Health : MonoBehaviour
             Debug.Log("GameOver");
             //SceneManager.LoadScene("GameOverScene");
         }
-
-        
-
-        //if ()
-        //{
-
-        //}
-
     }
-
-
 }

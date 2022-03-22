@@ -29,7 +29,7 @@ public class HearingSkillEnemy : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Area")
         {
             ren.enabled = true;
         }

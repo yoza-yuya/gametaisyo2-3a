@@ -1,4 +1,4 @@
-﻿Shader "Unlit/VisualSkill"
+﻿Shader "Unlit/HearingSkill"
 {
     Properties
     {

@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: VisualArea
+  m_Name: HearingArea
   m_Shader: {fileID: 4800000, guid: ca6a5a9c611d3bb4aa3f0461895cdd76, type: 3}
   m_ShaderKeywords: _ALPHABLEND_ON
   m_LightmapFlags: 4

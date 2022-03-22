@@ -7,9 +7,7 @@ public class SikakuCamera : MonoBehaviour
 
     private GameObject mainCamera;      //メインカメラ格納用
     private GameObject subCamera;       //サブカメラ格納用 
-    private float EffectiveTime = 10;   //効果時間
-    private float time = 0;
-
+ 
     void Start()
     {
         //メインカメラとサブカメラをそれぞれ取得
@@ -24,20 +22,22 @@ public class SikakuCamera : MonoBehaviour
     void Update()
     {
         //スペースキーが押されてから
-        if (Input.GetKey(KeyCode.A)&&Input.GetKey(KeyCode.B))
+        if (Input.GetKey(KeyCode.Space))
         {
-            if(EffectiveTime < time)
-             {
-            //サブカメラをアクティブに設定
-            mainCamera.SetActive(false);
-            subCamera.SetActive(true);
-                time += Time.deltaTime;
-                Debug.Log("On");
-            }
+            StartCoroutine("SikakuSkill");
         }
+
+    }
+    IEnumerator SikakuSkill()
+    {
+        //サブカメラをアクティブに設定
+        mainCamera.SetActive(false);
+        subCamera.SetActive(true);
+        Debug.Log("On");
+        yield return new WaitForSeconds(10);
         //メインカメラをアクティブに設定
-        subCamera.SetActive(false);
         mainCamera.SetActive(true);
+        subCamera.SetActive(false);
         Debug.Log("Off");
     }
 }

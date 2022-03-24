@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 136981855}
   - component: {fileID: 136981854}
   - component: {fileID: 136981853}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Tyoukaku
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,7 +357,7 @@ Transform:
   m_LocalScale: {x: 13.4001, y: 13.4001, z: 13.4001}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &159348007 stripped
 Transform:
@@ -441,6 +441,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arrow
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 60d23ab99a251234490a8832c0315794,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60d23ab99a251234490a8832c0315794, type: 3}
@@ -531,7 +536,7 @@ GameObject:
   - component: {fileID: 402873432}
   - component: {fileID: 402873431}
   - component: {fileID: 402873436}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Sikaku
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -611,7 +616,7 @@ Transform:
   m_LocalScale: {x: 13.4001, y: 13.4001, z: 13.4001}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &402873436
 MonoBehaviour:
@@ -638,7 +643,7 @@ GameObject:
   - component: {fileID: 447136725}
   - component: {fileID: 447136724}
   - component: {fileID: 447136728}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -773,7 +778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -850,7 +855,7 @@ GameObject:
   - component: {fileID: 603973393}
   - component: {fileID: 603973392}
   - component: {fileID: 603973391}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Kyuukaku
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -942,7 +947,7 @@ Transform:
   m_LocalScale: {x: 13.4001, y: 13.4001, z: 13.4001}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &716013289
 GameObject:
@@ -956,7 +961,7 @@ GameObject:
   - component: {fileID: 716013292}
   - component: {fileID: 716013291}
   - component: {fileID: 716013290}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: Stage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1035,7 +1040,7 @@ Transform:
   m_LocalScale: {x: 221.17343, y: 10, z: 383.15}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &794713582
 GameObject:
@@ -1466,7 +1471,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 5121
+    m_Bits: 5633
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: ef2204afcc1c33045b0027187bc57f1d, type: 2}
   m_TargetDisplay: 0
@@ -1488,8 +1493,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 374.7, y: 201, z: -110.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1394666206}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -1550,11 +1554,11 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 24
+  orthographic size: 30
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 5431
+    m_Bits: 7937
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: ef2204afcc1c33045b0027187bc57f1d, type: 2}
   m_TargetDisplay: 0
@@ -1573,12 +1577,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394666204}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 374.7, y: 202, z: -110.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1202060872}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &1394666207
 MonoBehaviour:
@@ -1605,7 +1609,7 @@ GameObject:
   - component: {fileID: 1412071507}
   - component: {fileID: 1412071506}
   - component: {fileID: 1412071505}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Kyuukaku
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1697,7 +1701,7 @@ Transform:
   m_LocalScale: {x: 13.4001, y: 13.4001, z: 13.4001}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1562532903
 GameObject:
@@ -1833,7 +1837,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1613805758
 GameObject:
@@ -1848,7 +1852,7 @@ GameObject:
   - component: {fileID: 1613805761}
   - component: {fileID: 1613805760}
   - component: {fileID: 1613805759}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: MIkaku
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1940,7 +1944,7 @@ Transform:
   m_LocalScale: {x: 13.4001, y: 13.4001, z: 13.4001}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1703360984
 GameObject:
@@ -2092,7 +2096,7 @@ Transform:
   m_LocalScale: {x: -38.48147, y: 22.5722, z: 10.467454}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1992636166
 GameObject:

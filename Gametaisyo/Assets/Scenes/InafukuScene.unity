@@ -166,6 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PauseMenuCanvas: {fileID: 2826553859611862487}
   curObj: {fileID: 0}
+  Pausecount: 0
 --- !u!4 &71596815 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0,
@@ -1065,6 +1066,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03859f1731138b4bbb0384dc6bdc539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PauseMenuCanvas: {fileID: 2826553859611862487}
+  curObj: {fileID: 0}
   GameReStartText: {fileID: 220294679}
   TitleBackText: {fileID: 307657777}
   ExitText: {fileID: 1867275239}
@@ -1420,6 +1423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcaa917b21b44a64499acd23337ee24e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mikaku: 0
 --- !u!114 &2103335952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1432,11 +1436,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0351f0718021024382af1285df05e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mikaku: 0
+  Blue: 0
   sikaku: 0
   tyoukaku: 0
   syokkaku: 0
   kyuukaku: 0
+  sita: 1
 --- !u!1001 &2826553859611862486
 PrefabInstance:
   m_ObjectHideFlags: 0

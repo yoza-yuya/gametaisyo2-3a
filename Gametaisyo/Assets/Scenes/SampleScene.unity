@@ -305,6 +305,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03859f1731138b4bbb0384dc6bdc539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PauseMenuCanvas: {fileID: 1783938272}
+  curObj: {fileID: 0}
   GameReStartText: {fileID: 1783938275}
   TitleBackText: {fileID: 1783938274}
   ExitText: {fileID: 1783938273}

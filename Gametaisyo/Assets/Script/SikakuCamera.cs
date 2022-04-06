@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SikakuCamera : MonoBehaviour
 {
-
+    bool SikakuSkillflg = false;    //コルーチンフラグ
+    bool SikakuCameraflg = true;
     private GameObject mainCamera;      //メインカメラ格納用
     private GameObject subCamera;       //サブカメラ格納用 
  
@@ -22,14 +23,16 @@ public class SikakuCamera : MonoBehaviour
     void Update()
     {
         //スペースキーが押されてから
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.P)&& !SikakuSkillflg && SikakuCameraflg)
         {
             StartCoroutine("SikakuSkill");
+            SikakuCameraflg = false;
         }
 
     }
     IEnumerator SikakuSkill()
     {
+        SikakuSkillflg = true;
         //サブカメラをアクティブに設定
         mainCamera.SetActive(false);
         subCamera.SetActive(true);
@@ -38,6 +41,7 @@ public class SikakuCamera : MonoBehaviour
         //メインカメラをアクティブに設定
         mainCamera.SetActive(true);
         subCamera.SetActive(false);
+        SikakuSkillflg = false;
         Debug.Log("Off");
     }
 }

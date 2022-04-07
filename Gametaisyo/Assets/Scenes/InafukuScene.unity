@@ -1446,7 +1446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcaa917b21b44a64499acd23337ee24e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mikaku: 0
+  itempoint: {fileID: 2103335952}
 --- !u!114 &2103335952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1459,11 +1459,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0351f0718021024382af1285df05e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Blue: 0
-  sikaku: 0
-  tyoukaku: 0
-  syokkaku: 0
-  kyuukaku: 0
+  mikakucount: 0
+  sikakucount: 0
+  tyoukakucount: 0
+  syokkakucount: 0
+  kyuukakucount: 0
   sita: 1
 --- !u!1001 &2826553859611862486
 PrefabInstance:

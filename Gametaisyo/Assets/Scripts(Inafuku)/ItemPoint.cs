@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class ItemPoint : MonoBehaviour
 {
-    public int Blue = 0;
-    public int sikaku = 0;
-    public int tyoukaku = 0;
-    public int syokkaku = 0;
-    public int kyuukaku = 0;
+    public int mikakucount = 0;
+    public int sikakucount = 0;
+    public int tyoukakucount = 0;
+    public int syokkakucount = 0;
+    public int kyuukakucount = 0;
 
-    public bool mimi = true;
+    public bool sita = true;
 
-    void Start()
+    public int Getmikakucount()
+    {
+        return mikakucount;
+    }
+
+        void Start()
     {
         
     }
@@ -28,7 +33,7 @@ public class ItemPoint : MonoBehaviour
         if (collider.gameObject.tag == "Item(mikaku)")
         {
             Debug.Log("味覚のアイテム取れたよ");
-            Blue = 2;
+            mikakucount = 2;
         }
     }
 }

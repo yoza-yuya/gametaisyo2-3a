@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Select : MonoBehaviour
 {
@@ -18,5 +19,9 @@ public class Select : MonoBehaviour
         button.GetComponent<Button>().Select();
         Debug.Log("aaa");
 
+    }
+    public void SampleScene()
+    {
+        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
     }
 }

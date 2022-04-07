@@ -10,8 +10,5 @@ EditorBuildSettings:
     guid: fd8f75f76ef2d834ea1184ca1fd50c1b
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Scenes/ClearScene.unity
-    guid: d66a88dd065fc094b874804a00fe9956
+    guid: 9fe513beffe0b5e4c953a294f66ce804
   m_configObjects: {}

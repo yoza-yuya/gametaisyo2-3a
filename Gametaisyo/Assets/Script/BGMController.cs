@@ -5,7 +5,7 @@ using UnityEngine;
 public class BGMController : MonoBehaviour
 {
     AudioSource BGM;
-    int xB = 0;
+    int xB = 0; //フラグ
     void Start()
     {
         BGM = GetComponent<AudioSource>();

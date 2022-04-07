@@ -8,13 +8,17 @@ public class ItemTakeRost : MonoBehaviour
 	/// 衝突した時
 	/// </summary>
 	/// <param name="collision"></param>
-	void OnCollisionEnter(Collision collision)
+	void OnTriggerEnter(Collider other)
 	{
 		// 衝突した相手にPlayerタグが付いているとき
-		if (collision.gameObject.tag == "Player")
+		if (other.gameObject.tag == "Player")
 		{
 			// 0.2秒後に消える
+			Debug.Log("触れた");
 			Destroy(gameObject, 0.2f);
+			//GoalOpenスクリプトの呼び出し
+			GameObject director = GameObject.Find("GameDirector");
+			director.GetComponent<GoalOpen>().Goalflg();
 		}
 	}
 }

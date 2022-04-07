@@ -9,6 +9,7 @@ public class Select : MonoBehaviour
     public Button button;
     public Button button2;
     public Button button3;
+    public Button button4;
 
     void OnEnable()
     {

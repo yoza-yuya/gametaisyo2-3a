@@ -24,12 +24,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Wall
+  - Item
+  - Stage
+  - Goal
+  - Player
+  - Hide
   - 
   - 
   - 

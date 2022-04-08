@@ -69,7 +69,13 @@ public class Health : MonoBehaviour
 
         if (BlueCount == 2)
         {
-            Debug.Log("回復できるよ");
+            //Debug.Log("回復できるよ");
+            bool Healkettei = Input.GetKeyDown("joystick button 0");
+            if (Healkettei == true && BlueCount == 2)
+            {
+                nowHp = nowHp + 1;
+                Debug.Log("After currentHp : " + nowHp);
+            }
         }
 
 

@@ -16,6 +16,13 @@ public class Health : MonoBehaviour
 
     public ItemPoint itempoint;
 
+
+    public int BlueCount;
+    //public int GetBlueCount()
+    //{
+    //    return BlueCount;
+    //}
+
     void Start()
     {
         //現在のHPを最大HPと同じに。
@@ -44,7 +51,7 @@ public class Health : MonoBehaviour
     private void Update()
     {
 
-        int BlueCount;
+        
         BlueCount = itempoint.Getmikakucount();
         //Debug.Log(BlueCount); 
 
@@ -75,6 +82,7 @@ public class Health : MonoBehaviour
             {
                 nowHp = nowHp + 1;
                 Debug.Log("After currentHp : " + nowHp);
+                //BlueCount = 1;
             }
         }
 

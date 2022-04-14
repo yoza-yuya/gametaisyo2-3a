@@ -15,13 +15,18 @@ public class Health : MonoBehaviour
     //ItemPoint Blue;
 
     public ItemPoint itempoint;
-
-
     public int BlueCount;
     //public int GetBlueCount()
     //{
     //    return BlueCount;
     //}
+
+
+    public bool gameovercount = false;
+    public bool Getgameovercount()
+    {
+        return gameovercount;
+    }
 
     void Start()
     {
@@ -64,7 +69,8 @@ public class Health : MonoBehaviour
         if (nowHp <= 0)
         {
             Debug.Log("GameOver");
-            //SceneManager.LoadScene("GameOverScene");
+            SceneManager.LoadScene("GameOver");
+            gameovercount = true;
         }
 
 

@@ -10,7 +10,7 @@ public class ItemPoint : MonoBehaviour
     public int syokkakucount = 0;
     public int kyuukakucount = 0;
 
-    public bool sita = true;
+    
 
     public int Getmikakucount()
     {

@@ -10,14 +10,16 @@ public class ItemPoint : MonoBehaviour
     public int syokkakucount = 0;
     public int kyuukakucount = 0;
 
-    public bool sita = true;
+    
 
     public int Getmikakucount()
     {
         return mikakucount;
     }
 
-        void Start()
+    //public Health Health;
+
+       void Start()
     {
         
     }
@@ -29,11 +31,17 @@ public class ItemPoint : MonoBehaviour
     }
     private void OnTriggerEnter(Collider collider)
     {
-        
+        //味覚
         if (collider.gameObject.tag == "Item(mikaku)")
         {
             Debug.Log("味覚のアイテム取れたよ");
             mikakucount = 2;
+        }
+        //触覚
+        if (collider.gameObject.tag == "Item(syokkaku)")
+        {
+            Debug.Log("味覚のアイテム取れたよ");
+            syokkakucount = 2;
         }
     }
 }

@@ -18,7 +18,7 @@ public class ItemTakeRost : MonoBehaviour
 			Destroy(gameObject, 0.2f);
 			//GoalOpenスクリプトの呼び出し
 			GameObject director = GameObject.Find("GameDirector");
-			director.GetComponent<GoalOpen>().Goalflg();
+			//director.GetComponent<GoalOpen>().Goalflg();
 		}
 	}
 }

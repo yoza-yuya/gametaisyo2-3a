@@ -15,6 +15,18 @@ public class Health : MonoBehaviour
     //ItemPoint Blue;
 
     public ItemPoint itempoint;
+    public int BlueCount;
+    //public int GetBlueCount()
+    //{
+    //    return BlueCount;
+    //}
+
+
+    public bool gameovercount = false;
+    public bool Getgameovercount()
+    {
+        return gameovercount;
+    }
 
     void Start()
     {
@@ -44,7 +56,7 @@ public class Health : MonoBehaviour
     private void Update()
     {
 
-        int BlueCount;
+        
         BlueCount = itempoint.Getmikakucount();
         //Debug.Log(BlueCount); 
 
@@ -57,7 +69,8 @@ public class Health : MonoBehaviour
         if (nowHp <= 0)
         {
             Debug.Log("GameOver");
-            //SceneManager.LoadScene("GameOverScene");
+            SceneManager.LoadScene("GameOver");
+            gameovercount = true;
         }
 
 
@@ -69,7 +82,14 @@ public class Health : MonoBehaviour
 
         if (BlueCount == 2)
         {
-            Debug.Log("回復できるよ");
+            //Debug.Log("回復できるよ");
+            bool Healkettei = Input.GetKeyDown("joystick button 0");
+            if (Healkettei == true && BlueCount == 2)
+            {
+                nowHp = nowHp + 1;
+                Debug.Log("After currentHp : " + nowHp);
+                //BlueCount = 1;
+            }
         }
 
 

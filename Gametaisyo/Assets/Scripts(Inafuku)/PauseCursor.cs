@@ -24,7 +24,7 @@ public class PauseCursor : MonoBehaviour
     float x;
 
     float af = 0, df = 0;
-    //int Stet = 1;
+    
 
 
 

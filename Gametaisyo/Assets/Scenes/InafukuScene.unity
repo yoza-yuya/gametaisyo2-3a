@@ -1102,7 +1102,7 @@ GameObject:
   - component: {fileID: 1664045058}
   - component: {fileID: 1664045057}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: soul1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1490,7 +1490,7 @@ GameObject:
   - component: {fileID: 1987031923}
   - component: {fileID: 1987031922}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: batten1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1757,6 +1757,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itempoint: {fileID: 2103335952}
   BlueCount: 0
+  soul1: {fileID: 0}
+  soul2: {fileID: 0}
+  soul3: {fileID: 0}
+  soul4: {fileID: 0}
+  soul5: {fileID: 0}
+  batten1: {fileID: 0}
+  batten2: {fileID: 0}
+  batten3: {fileID: 0}
+  batten4: {fileID: 0}
+  batten5: {fileID: 0}
+  tate: {fileID: 0}
   gameovercount: 0
 --- !u!114 &2103335952
 MonoBehaviour:

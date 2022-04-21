@@ -7,8 +7,7 @@ public class Enemymove : MonoBehaviour
     [SerializeField]
     [Tooltip("巡回する地点の配列")]
     private Transform[] waypoints;
-    [Tooltip("巡回する地点の配列2")]
-    private Transform[] waypoints2;
+    public Transform[] waypoints2;
     private NavMeshAgent _agent;
     EnemyDetection ene3;
     public Transform target;

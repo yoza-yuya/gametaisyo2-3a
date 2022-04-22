@@ -7,7 +7,7 @@ public class EnemyTurn : MonoBehaviour
     public int flg = 0;
     public float a = 0f;
     float j = 0;
-    Enemymove ene;
+    EnemyTurn2 ene;
     public GameObject Cube;
     void Start()
     {
@@ -16,7 +16,7 @@ public class EnemyTurn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ene = Cube.GetComponent<Enemymove>();
+        ene = Cube.GetComponent<EnemyTurn2>();
         if(ene.flg3 == 1)
         {
             flg = 0;
@@ -28,24 +28,8 @@ public class EnemyTurn : MonoBehaviour
         {
             a = ene.i;
             flg = 1;
-            Debug.Log("T");
             j = Random.Range(1f, 4f);
-            if(j >= 1f && j < 1.5f)
-            {
-                if (a >= 1f && a < 2f)
-                {
-                    a = 2f;
-                }
-                else if (a >= 2f && a < 3f)
-                {
-                    a = 1f;
-                }
-                else if (a >= 3f && a < 4f)
-                {
-                    a = 4f;
-                }
-            }
-            else if(j >= 1.5f && j < 2.75f)
+            if(j >= 1f && j < 2.5f)
             {
                 if (a >= 1f && a < 2f)
                 {
@@ -60,7 +44,7 @@ public class EnemyTurn : MonoBehaviour
                     a = 1f;
                 }
             }
-            else if (j >= 2.75f && j < 4f)
+            else if (j >= 2.5f && j < 4f)
             {
                 if (a >= 1f && a < 2f)
                 {
@@ -80,24 +64,8 @@ public class EnemyTurn : MonoBehaviour
         {
             a = ene.i;
             flg = 1;
-            Debug.Log("逆T");
             j = Random.Range(1f, 4f); 
-            if (j >= 1f && j < 1.5f)
-            {
-                if (a >= 1f && a < 2f)
-                {
-                    a = 2f;
-                }
-                else if (a >= 2f && a < 3f)
-                {
-                    a = 1f;
-                }
-                else if (a >= 4f && a <= 5f)
-                {
-                    a = 3f;
-                }
-            }
-            else if (j >= 1.5f && j < 2.75f)
+            if (j >= 1f && j < 2.5f)
             {
                 if (a >= 1f && a < 2f)
                 {
@@ -112,7 +80,7 @@ public class EnemyTurn : MonoBehaviour
                     a = 1f;
                 }
             }
-            else if (j >= 2.75f && j < 4f)
+            else if (j >= 2.5f && j < 4f)
             {
                 if (a >= 1f && a < 2f)
                 {
@@ -132,24 +100,8 @@ public class EnemyTurn : MonoBehaviour
         {
             a = ene.i;
             flg = 1;
-            Debug.Log("ト");
             j = Random.Range(1f, 4f);
-            if (j >= 1f && j < 1.5f)
-            {
-                if (a >= 1f && a < 2f)
-                {
-                    a = 2f;
-                }
-                else if (a >= 3f && a < 4f)
-                {
-                    a = 4f;
-                }
-                else if (a >= 4f && a <= 5f)
-                {
-                    a = 3f;
-                }
-            }
-            else if (j >= 1.5f && j < 2.75f)
+            if (j >= 1f && j < 2.5f)
             {
                 if (a >= 1f && a < 2f)
                 {
@@ -164,7 +116,7 @@ public class EnemyTurn : MonoBehaviour
                     a = 4f;
                 }
             }
-            else if (j >= 2.75f && j < 4f)
+            else if (j >= 2.5f && j < 4f)
             {
                 if (a >= 1f && a < 2f)
                 {
@@ -185,24 +137,8 @@ public class EnemyTurn : MonoBehaviour
         {
             a = ene.i;
             flg = 1;
-            Debug.Log("逆ト");
             j = Random.Range(1f, 4f);
-            if (j >= 1f && j < 1.5f)
-            {
-                if (a >= 2f && a < 3f)
-                {
-                    a = 1f;
-                }
-                else if (a >= 3f && a < 4f)
-                {
-                    a = 4f;
-                }
-                else if (a >= 4f && a <= 5f)
-                {
-                    a = 3f;
-                }
-            }
-            else if (j >= 1.5f && j < 2.75f)
+            if (j >= 1f && j < 2.5f)
             {
                 if (a >= 2f && a < 3f)
                 {
@@ -217,7 +153,7 @@ public class EnemyTurn : MonoBehaviour
                     a = 4f;
                 }
             }
-            else if (j >= 2.75f && j < 4f)
+            else if (j >= 2.5f && j < 4f)
             {
                 if (a >= 2f && a < 3f)
                 {

@@ -3514,8 +3514,9 @@ GameObject:
   - component: {fileID: 1600917325}
   - component: {fileID: 1600917326}
   - component: {fileID: 1600917327}
+  - component: {fileID: 1600917328}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: PlayerObject
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3576,7 +3577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcaa917b21b44a64499acd23337ee24e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itempoint: {fileID: 0}
+  itempoint: {fileID: 1600917328}
   BlueCount: 0
   soul1: {fileID: 372113225}
   soul2: {fileID: 1848115703}
@@ -3590,6 +3591,23 @@ MonoBehaviour:
   batten5: {fileID: 0}
   tate: {fileID: 0}
   gameovercount: 0
+--- !u!114 &1600917328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600917323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0351f0718021024382af1285df05e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mikakucount: 0
+  sikakucount: 0
+  tyoukakucount: 0
+  syokkakucount: 0
+  kyuukakucount: 0
 --- !u!1 &1636787779
 GameObject:
   m_ObjectHideFlags: 0

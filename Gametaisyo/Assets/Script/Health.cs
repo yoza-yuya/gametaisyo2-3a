@@ -22,11 +22,11 @@ public class Health : MonoBehaviour
     //}
 
 
-    [SerializeField] private GameObject soul1;
-    [SerializeField] private GameObject soul2;
-    [SerializeField] private GameObject soul3;
-    [SerializeField] private GameObject soul4;
-    [SerializeField] private GameObject soul5;
+    //[SerializeField] private GameObject soul1;
+    //[SerializeField] private GameObject soul2;
+    //[SerializeField] private GameObject soul3;
+    //[SerializeField] private GameObject soul4;
+    //[SerializeField] private GameObject soul5;
 
     [SerializeField] private GameObject batten1;
     [SerializeField] private GameObject batten2;
@@ -85,8 +85,8 @@ public class Health : MonoBehaviour
         //HPが０になったらゲームオーバーにいく
         if (nowHp <= 0)
         {
-            Debug.Log("GameOver");
-            SceneManager.LoadScene("GameOver");
+            //Debug.Log("GameOver");
+            //SceneManager.LoadScene("GameOver");
             gameovercount = true;
         }
 
@@ -110,65 +110,65 @@ public class Health : MonoBehaviour
         }
 
 
-        if (nowHp == 5)
+        if (nowHp == 0)
         {
-            soul1.SetActive(true);
-            soul2.SetActive(true);
-            soul3.SetActive(true);
-            soul4.SetActive(true);
-            soul5.SetActive(true);
-        }
-
-        if (nowHp == 4)
-        {
-            soul5.SetActive(false);
-
-            soul1.SetActive(true);
-            soul2.SetActive(true);
-            soul3.SetActive(true);
-            soul4.SetActive(true);
-        }
-
-        if (nowHp == 3)
-        {
-            soul4.SetActive(false);
-            soul5.SetActive(false);
-
-            soul1.SetActive(true);
-            soul2.SetActive(true);
-            soul3.SetActive(true);
-            
-        }
-
-        if (nowHp == 2)
-        {
-            soul3.SetActive(false);
-            soul4.SetActive(false);
-            soul5.SetActive(false);
-
-            soul1.SetActive(true);
-            soul2.SetActive(true);
-            
+            batten1.SetActive(true);
+            batten2.SetActive(true);
+            batten3.SetActive(true);
+            batten4.SetActive(true);
+            batten5.SetActive(true);
         }
 
         if (nowHp == 1)
         {
-            soul2.SetActive(false);
-            soul3.SetActive(false);
-            soul4.SetActive(false);
-            soul5.SetActive(false);
+            batten5.SetActive(false);
 
-            soul1.SetActive(true);
-           
+            batten1.SetActive(true);
+            batten2.SetActive(true);
+            batten3.SetActive(true);
+            batten4.SetActive(true);
         }
 
-        if (nowHp == 0)
+        if (nowHp == 2)
         {
-            soul1.SetActive(false);
-            soul2.SetActive(false);
-            soul3.SetActive(false);
-            soul4.SetActive(false);
-            soul5.SetActive(false);
+            batten4.SetActive(false);
+            batten5.SetActive(false);
+
+            batten1.SetActive(true);
+            batten2.SetActive(true);
+            batten3.SetActive(true);
+
+        }
+
+        if (nowHp == 3)
+        {
+            batten3.SetActive(false);
+            batten4.SetActive(false);
+            batten5.SetActive(false);
+
+            batten1.SetActive(true);
+            batten2.SetActive(true);
+
+        }
+
+        if (nowHp == 4)
+        {
+            batten2.SetActive(false);
+            batten3.SetActive(false);
+            batten4.SetActive(false);
+            batten5.SetActive(false);
+
+            batten1.SetActive(true);
+
+        }
+
+        if (nowHp == 5)
+        {
+            batten1.SetActive(false);
+            batten2.SetActive(false);
+            batten3.SetActive(false);
+            batten4.SetActive(false);
+            batten5.SetActive(false);
 
             
 

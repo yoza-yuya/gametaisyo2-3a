@@ -94,7 +94,7 @@ public class Health : MonoBehaviour
         
         if (BlueCount == true)
         {
-
+            Debug.Log("回復しやがれバカが");
             if (!isCalledOnce)
             {
                 isCalledOnce = true;

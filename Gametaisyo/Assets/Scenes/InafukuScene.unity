@@ -843,6 +843,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596bb34d2d5fd084ca430428df3aab06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1363135973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8543090456647461994, guid: 665ed8ad9a66f0746a5fdcb58f8f69da,
+    type: 3}
+  m_PrefabInstance: {fileID: 8543090455326204303}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1551559730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -958,12 +964,12 @@ PrefabInstance:
     - target: {fileID: -1835035526448316888, guid: 8ba76b21d00f18449b253b648d238225,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: -8.24
       objectReference: {fileID: 0}
     - target: {fileID: -1835035526448316888, guid: 8ba76b21d00f18449b253b648d238225,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4
+      value: -0.27
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 8ba76b21d00f18449b253b648d238225,
         type: 3}
@@ -1326,9 +1332,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d08a5f57bc26b4c48844c89c526685b3, type: 3}
---- !u!1 &1987031920 stripped
+--- !u!1 &1946681299 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8543090457306993407, guid: 665ed8ad9a66f0746a5fdcb58f8f69da,
+  m_CorrespondingSourceObject: {fileID: 4633513548896850336, guid: 665ed8ad9a66f0746a5fdcb58f8f69da,
     type: 3}
   m_PrefabInstance: {fileID: 8543090455326204303}
   m_PrefabAsset: {fileID: 0}
@@ -1547,12 +1553,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itempoint: {fileID: 2103335952}
   BlueCount: 0
+  soul4: {fileID: 1363135973}
   batten1: {fileID: 2077453526}
   batten2: {fileID: 1081571039}
   batten3: {fileID: 1003844864}
   batten4: {fileID: 999288027}
-  batten5: {fileID: 1987031920}
-  tate: {fileID: 0}
+  tate: {fileID: 1946681299}
   gameovercount: 0
 --- !u!114 &2103335952
 MonoBehaviour:
@@ -1750,6 +1756,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4633513548896850336, guid: 665ed8ad9a66f0746a5fdcb58f8f69da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8543090456273112404, guid: 665ed8ad9a66f0746a5fdcb58f8f69da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543090456768843168, guid: 665ed8ad9a66f0746a5fdcb58f8f69da,
         type: 3}
       propertyPath: m_Name

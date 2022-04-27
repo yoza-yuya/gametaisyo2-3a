@@ -12,7 +12,7 @@ public class PauseCursor : MonoBehaviour
     Cursor cur;
 
     //int Pauseswich;
-    int Pausecount = 0;
+    bool Pausecount = false;
     //public TimeCounter TimeCounter;
 
     [SerializeField] private GameObject GameReStartText;
@@ -57,18 +57,18 @@ public class PauseCursor : MonoBehaviour
     {
         bool start = Input.GetKeyDown("joystick button 7");
 
-        if (start == true && Pausecount == 0)
+        if (start == true && Pausecount == false)
         {
             Time.timeScale = 0;
             PauseMenuCanvas.SetActive(true);
-            Pausecount = 1;
+            Pausecount = true;
 
         }
-        else if (start == true && Pausecount == 1)
+        else if (start == true && Pausecount == true)
         {
             Time.timeScale = 1;
             PauseMenuCanvas.SetActive(false);
-            Pausecount = 0;
+            Pausecount = false;
 
         }
 
@@ -76,7 +76,7 @@ public class PauseCursor : MonoBehaviour
         ///カーソルの色を変えるコード
         ///
 
-        if(Pausecount == 1)
+        if(Pausecount == true)
         {
             x = Input.GetAxisRaw("Vertical");
 
@@ -200,7 +200,7 @@ public class PauseCursor : MonoBehaviour
 
        
 
-        if(Pausecount == 0 && Cursorcount != 1)
+        if(Pausecount == false && Cursorcount != 1)
         {
             Cursorcount = 1;
 
@@ -222,12 +222,14 @@ public class PauseCursor : MonoBehaviour
     }
     IEnumerator GoToGameScene()
     {
+        Time.timeScale = 1;
         yield return new WaitForSeconds(0.57f);
         SceneManager.LoadScene("SampleScene");
     }
 
     IEnumerator GoToTitleScene()
     {
+        Time.timeScale = 1;
         yield return new WaitForSeconds(0.57f);
         SceneManager.LoadScene("TitleScene");
     }

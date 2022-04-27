@@ -15,6 +15,35 @@ public class Health : MonoBehaviour
     //ItemPoint Blue;
 
     public ItemPoint itempoint;
+    public int BlueCount;
+    //public int GetBlueCount()
+    //{
+    //    return BlueCount;
+    //}
+
+
+    [SerializeField] private GameObject soul1;
+    [SerializeField] private GameObject soul2;
+    [SerializeField] private GameObject soul3;
+    [SerializeField] private GameObject soul4;
+    [SerializeField] private GameObject soul5;
+
+    [SerializeField] private GameObject batten1;
+    [SerializeField] private GameObject batten2;
+    [SerializeField] private GameObject batten3;
+    [SerializeField] private GameObject batten4;
+    [SerializeField] private GameObject batten5;
+
+    [SerializeField] private GameObject tate;
+
+
+
+
+    public bool gameovercount = false;
+    public bool Getgameovercount()
+    {
+        return gameovercount;
+    }
 
     void Start()
     {
@@ -44,7 +73,7 @@ public class Health : MonoBehaviour
     private void Update()
     {
 
-        int BlueCount;
+        
         BlueCount = itempoint.Getmikakucount();
         //Debug.Log(BlueCount); 
 
@@ -57,7 +86,8 @@ public class Health : MonoBehaviour
         if (nowHp <= 0)
         {
             Debug.Log("GameOver");
-            //SceneManager.LoadScene("GameOverScene");
+            SceneManager.LoadScene("GameOver");
+            gameovercount = true;
         }
 
 
@@ -69,10 +99,80 @@ public class Health : MonoBehaviour
 
         if (BlueCount == 2)
         {
-            Debug.Log("回復できるよ");
+            //Debug.Log("回復できるよ");
+            bool Healkettei = Input.GetKeyDown("joystick button 0");
+            if (Healkettei == true && BlueCount == 2)
+            {
+                nowHp = nowHp + 1;
+                Debug.Log("After currentHp : " + nowHp);
+                //BlueCount = 1;
+            }
         }
 
 
+        if (nowHp == 5)
+        {
+            soul1.SetActive(true);
+            soul2.SetActive(true);
+            soul3.SetActive(true);
+            soul4.SetActive(true);
+            soul5.SetActive(true);
+        }
+
+        if (nowHp == 4)
+        {
+            soul5.SetActive(false);
+
+            soul1.SetActive(true);
+            soul2.SetActive(true);
+            soul3.SetActive(true);
+            soul4.SetActive(true);
+        }
+
+        if (nowHp == 3)
+        {
+            soul4.SetActive(false);
+            soul5.SetActive(false);
+
+            soul1.SetActive(true);
+            soul2.SetActive(true);
+            soul3.SetActive(true);
+            
+        }
+
+        if (nowHp == 2)
+        {
+            soul3.SetActive(false);
+            soul4.SetActive(false);
+            soul5.SetActive(false);
+
+            soul1.SetActive(true);
+            soul2.SetActive(true);
+            
+        }
+
+        if (nowHp == 1)
+        {
+            soul2.SetActive(false);
+            soul3.SetActive(false);
+            soul4.SetActive(false);
+            soul5.SetActive(false);
+
+            soul1.SetActive(true);
+           
+        }
+
+        if (nowHp == 0)
+        {
+            soul1.SetActive(false);
+            soul2.SetActive(false);
+            soul3.SetActive(false);
+            soul4.SetActive(false);
+            soul5.SetActive(false);
+
+            
+
+        }
     }
 
 

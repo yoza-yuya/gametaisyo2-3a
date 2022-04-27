@@ -467,8 +467,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 669028656}
   button2: {fileID: 677739148}
-  button3: {fileID: 398481129}
-  button4: {fileID: 0}
+  button3: {fileID: 1057006784}
+  button4: {fileID: 398481129}
 --- !u!114 &483120475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,7 +507,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c0c9bde171bd28543a4e0ba437acd4f1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cfaf4f6f2e6e0654e87e21852714005c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

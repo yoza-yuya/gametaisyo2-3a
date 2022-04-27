@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ItemTakeRost : MonoBehaviour
 {
+	//どこでも実行できるようにする
+	public static ItemTakeRost instance;
+	public static int GoalCount;
 	/// <summary>
 	/// 衝突した時
 	/// </summary>
@@ -19,6 +22,7 @@ public class ItemTakeRost : MonoBehaviour
 			//GoalOpenスクリプトの呼び出し
 			GameObject director = GameObject.Find("GameDirector");
 			//director.GetComponent<GoalOpen>().Goalflg();
+			GoalCount++;
 		}
 	}
 }

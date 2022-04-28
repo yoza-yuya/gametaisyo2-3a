@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    // 種類を持っている
+    // 列挙型：種類
     public enum Type
     {
-        RedTile,
-        BlueTile,
-        YellowTile,
-        Key,
-        Coin,
+        tyoukaku,
+        kyuukaku,
+        mikaku,
+        syokkaku,
+        sikaku,
     }
 
     public Type type;

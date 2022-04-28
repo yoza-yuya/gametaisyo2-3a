@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class GoalOpen : MonoBehaviour
 {
+
+    public GameObject goalwall;
     int GoalCount = 0;
     public GameObject Goal;
-    public void Goalflg()
+    public void Update()
     {
-        //アイテムが取られるとカウントを増やす
-        GoalCount++;
-        Debug.Log(GoalCount);
+        GoalCount = ItemTakeRost.GoalCount;
         //五つ取ったら
-        if(GoalCount == 5)
+        if (GoalCount == 5)
         {
-            Goal.SetActive(false);
+            Destroy(goalwall);
         }
     }
 }

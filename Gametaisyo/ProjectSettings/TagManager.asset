@@ -15,6 +15,9 @@ TagManager:
   - To
   - OppositeTo
   - Area
+  - Item(sikaku)
+  - Item(mikaku)
+  - Item(syokkaku)
   layers:
   - Default
   - TransparentFX

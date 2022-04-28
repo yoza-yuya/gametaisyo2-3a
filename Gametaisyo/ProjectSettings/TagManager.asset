@@ -15,9 +15,14 @@ TagManager:
   - To
   - OppositeTo
   - Area
+<<<<<<< HEAD
   - Item(sikaku)
   - Item(mikaku)
   - Item(syokkaku)
+=======
+  - Item(mikaku)
+  - goal
+>>>>>>> e0c08731ef815c268881b2265eb86e14b569ecfb
   layers:
   - Default
   - TransparentFX
@@ -35,7 +40,7 @@ TagManager:
   - Hide
   - Light
   - Icon
-  - 
+  - Area
   - 
   - 
   - 

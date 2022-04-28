@@ -10,17 +10,16 @@ public class Health : MonoBehaviour
     int maxHp = 4;
     int nowHp;
 
-    bool tateflag = false;
-    bool notDamage = false;
-
     //public int mikaku;
     //GameObject PlayerObject;
     //ItemPoint Blue;
 
     public ItemPoint itempoint;
     public bool BlueCount;
-    public bool PurpleCount;
-    
+    //public int GetBlueCount()
+    //{
+    //    return BlueCount;
+    //}
 
     bool yon = false;
 
@@ -34,11 +33,9 @@ public class Health : MonoBehaviour
     
 
     [SerializeField] private GameObject tate;
-    [SerializeField] private GameObject tate4;
 
 
-    bool isCalledOnce1 = false;
-    bool isCalledOnce2 = false;
+    bool isCalledOnce = false;
 
     public bool gameovercount = false;
     public bool Getgameovercount()
@@ -62,17 +59,11 @@ public class Health : MonoBehaviour
             //ダメージ
             int damage = 1;
             Debug.Log("damage : " + damage);
-            if (nowHp > 0 && notDamage == false)
+            if (nowHp > 0)
             {
-                
                 //現在のHPからダメージを引く
                 nowHp = nowHp - damage;
                 Debug.Log("After currentHp : " + nowHp);
-            }else if(nowHp > 0 && notDamage == true)
-            {
-                Debug.Log("攻撃を無かったことにするッッッ！！！");
-                notDamage = false;
-                tateflag = false;
             }
         }
     }
@@ -85,7 +76,6 @@ public class Health : MonoBehaviour
 
         
         BlueCount = itempoint.Getmikakucount();
-        PurpleCount = itempoint.Getsyokkakucount();
         //Debug.Log(BlueCount); 
 
 
@@ -104,10 +94,10 @@ public class Health : MonoBehaviour
         
         if (BlueCount == true)
         {
-
-            if (!isCalledOnce1)
+            Debug.Log("回復しやがれバカが");
+            if (!isCalledOnce)
             {
-                isCalledOnce1 = true;
+                isCalledOnce = true;
 
                 //StartCoroutine("HPheal");
                 switch (nowHp)
@@ -253,32 +243,12 @@ public class Health : MonoBehaviour
             }
         }
 
-        if(PurpleCount == true)
-        {
-            if (!isCalledOnce2)
-            {
-                Debug.Log("バリア！");
-                isCalledOnce2 = true;
-                tateflag = true;
-                
-
-            }
-        }
-
-        if(tateflag == true)
-        {
-            tate.SetActive(true);
-            notDamage = true;
-            if(BlueCount == true && nowHp == 4)
-            {
-                tate4.SetActive(true);
-            }
-        }else if (tateflag == false)
-        {
-            tate.SetActive(false);
-            tate4.SetActive(false);
-        }
+        
     }
 
-    
+    //IEnumerator HPheal()
+    //{
+    //    yield return new WaitForSeconds(0.57f);
+        
+    //}
 }

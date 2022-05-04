@@ -9,7 +9,8 @@ public class Health : MonoBehaviour
     //最大HPと現在のHP。
     int maxHp = 4;
     int nowHp;
-
+    //Image img;
+    
     //public int mikaku;
     //GameObject PlayerObject;
     //ItemPoint Blue;
@@ -45,10 +46,15 @@ public class Health : MonoBehaviour
 
     void Start()
     {
+        //Images img = GameReStartText.GetComponent<img>();
+        //this.img.color = new Color(0f, 0f, 0f, 0f);
         //現在のHPを3に。
         nowHp = 3;
         Debug.Log("Start currentHp : " + nowHp);
-       
+        //img = GetComponent<Image>();
+        //img.color = Color.clear;
+
+
     }
 
     private void OnTriggerEnter(Collider collider)
@@ -60,13 +66,20 @@ public class Health : MonoBehaviour
             int damage = 1;
             Debug.Log("damage : " + damage);
             if (nowHp > 0)
-            {
-                //現在のHPからダメージを引く
-                nowHp = nowHp - damage;
+            //{
+            //    //this.img.color = new Color(0.5f, 0f, 0f, 0.5f);
+            //}
+            //else
+            //{
+            //    this.img.color = Color.Lerp(this.img.color, Color.clear, Time.deltaTime);
+            //}
+
+            //現在のHPからダメージを引く
+            nowHp = nowHp - damage;
                 Debug.Log("After currentHp : " + nowHp);
-            }
         }
     }
+
 
 
 

@@ -11,6 +11,9 @@ TagManager:
   - Item(mikaku)
   - Wall
   - Item(sikaku)
+  - Item(tyoukaku)
+  - Item(syokkaku)
+  - Item(kyukaku)
   layers:
   - Default
   - TransparentFX

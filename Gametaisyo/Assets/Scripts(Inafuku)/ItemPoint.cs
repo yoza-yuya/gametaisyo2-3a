@@ -30,6 +30,12 @@ public class ItemPoint : MonoBehaviour
         return syokkakucount;
     }
 
+    //聴覚
+    public bool Gettyoukakucount()
+    {
+        return tyoukakucount;
+    }
+
 
 
     void Start()

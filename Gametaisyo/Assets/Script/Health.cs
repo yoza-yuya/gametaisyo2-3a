@@ -20,6 +20,12 @@ public class Health : MonoBehaviour
     bool notDamage = false;
     bool tateflag = false;
 
+
+    float x;
+
+    float af = 0, df = 0;
+    bool tatchflag = false;
+
     [SerializeField] private GameObject soul4;
 
 
@@ -54,22 +60,36 @@ public class Health : MonoBehaviour
         //Enemyタグのオブジェクトに触れると
         if (collider.gameObject.tag == "Enemy")
         {
-            //ダメージ
-            int damage = 1;
-            Debug.Log("damage : " + damage);
-            if (nowHp > 0 && notDamage == false)
+            tatchflag = true;
+            if (tatchflag == true)
             {
+                af++;//上入力の間加算し続ける
 
-                //現在のHPからダメージを引く
-                nowHp = nowHp - damage;
-                Debug.Log("After currentHp : " + nowHp);
+                if (af == 1)//afが加算され続けている時、その値が1の瞬間のみ以下の処理を行う。故に連続入力の対策となる
+                {
+                    //ダメージ
+                    int damage = 1;
+                    Debug.Log("damage : " + damage);
+                    if (nowHp > 0 && notDamage == false)
+                    {
+
+                        //現在のHPからダメージを引く
+                        nowHp = nowHp - damage;
+                        Debug.Log("After currentHp : " + nowHp);
+                    }
+                    else if (nowHp > 0 && notDamage == true)
+                    {
+                        Debug.Log("攻撃を無かったことにするッッッ！！！");
+                        notDamage = false;
+                        tateflag = true;
+                    }
+                }
             }
-            else if (nowHp > 0 && notDamage == true)
-            {
-                Debug.Log("攻撃を無かったことにするッッッ！！！");
-                notDamage = false;
-                tateflag = false;
-            }
+        }
+        if (collider.gameObject.tag != "Enemy")
+        {
+            tatchflag = false;
+            af = 0;//スティックが離されるか別入力になったら0にする
         }
     }
 

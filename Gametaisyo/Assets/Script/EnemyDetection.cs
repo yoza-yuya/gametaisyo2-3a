@@ -10,28 +10,39 @@ public class EnemyDetection : MonoBehaviour
     public Transform Enemy;
     private RaycastHit hit;
     float dis;
+    Vector3 pos;
     void Start()
     {
-
+        pos = Enemy.position;
     }
 
     void Update()
     {
+        pos.y = 0;
+        pos = Enemy.position;
+        Debug.Log(Enemy.position.y);
     }
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
             GameObject Target = GameObject.Find("Player");
-            var diff = Player.position - Enemy.position;
-            var direction = diff.normalized;
+            Vector3 diff = Player.position - Enemy.position;
+            Vector3 direction = diff.normalized;
             dis = Vector3.Distance(Enemy.position, Player.position);
-            if (Physics.Raycast(Enemy.position, direction, out hit, dis))
+            Ray ray = new Ray(Enemy.position, direction);
+            Debug.DrawRay(ray.origin, ray.direction * dis, Color.red);
+
+            if (Physics.Raycast(ray.origin, ray.direction * dis, out hit))
             {
-                Ray ray = new Ray(Enemy.position, direction);
-                Debug.DrawRay(ray.origin, ray.direction * 20, Color.red, 5.0f);
-                if (hit.transform.gameObject == Target) {
+                if (hit.collider.CompareTag("Player"))
+                {
+                    Debug.Log("プレイヤー発見");
                     flag = true;
+                }
+                else
+                {
+                    Debug.Log("プレイヤーとの間に壁がある");
                 }
             }
         }

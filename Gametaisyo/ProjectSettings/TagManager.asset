@@ -4,19 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Item
-  - Wall
-  - Bullet
-  - Enemy
-  - Light
-  - T
-  - Cross
-  - OppositeT
-  - To
-  - OppositeTo
-  - Area
-  - Item(mikaku)
   - goal
+  - Enemy
+  - Area
+  - Bullet
+  - Item(mikaku)
+  - Wall
+  - Item(sikaku)
+  - Item(tyoukaku)
+  - Item(syokkaku)
+  - Item(kyukaku)
   layers:
   - Default
   - TransparentFX
@@ -26,15 +23,15 @@ TagManager:
   - UI
   - 
   - 
-  - Wall
-  - Item
-  - Stage
-  - Goal
-  - Player
-  - Hide
-  - Light
-  - Icon
-  - Area
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 

@@ -12,14 +12,33 @@ public class ItemPoint : MonoBehaviour
 
     
 
+    //味覚
     public bool Getmikakucount()
     {
         return mikakucount;
     }
 
-    //public Health Health;
+    //視覚
+    public bool Getsikakucount()
+    {
+        return sikakucount;
+    }
 
-       void Start()
+    //触覚
+    public bool Getsyokkakucount()
+    {
+        return syokkakucount;
+    }
+
+    //聴覚
+    public bool Gettyoukakucount()
+    {
+        return tyoukakucount;
+    }
+
+
+
+    void Start()
     {
         
     }
@@ -31,7 +50,7 @@ public class ItemPoint : MonoBehaviour
     }
     private void OnTriggerEnter(Collider collider)
     {
-        //味覚
+        //味覚(青色の玉)
         if (collider.gameObject.tag == "Item(mikaku)")
         {
             Debug.Log("味覚のアイテム取れたよ");
@@ -52,7 +71,7 @@ public class ItemPoint : MonoBehaviour
             tyoukakucount = true;
         }
 
-        //視覚
+        //視覚(緑色の玉)
         if (collider.gameObject.tag == "Item(sikaku)")
         {
             Debug.Log("視覚のアイテム取れたよ");

@@ -8,7 +8,13 @@ public class SikakuCamera : MonoBehaviour
     bool SikakuCameraflg = true;
     private GameObject mainCamera;      //メインカメラ格納用
     private GameObject subCamera;       //サブカメラ格納用 
- 
+
+
+    //追加
+    public ItemPoint itempoint;
+    public bool WriteCount;
+    bool isCalledOnce1 = false;
+
     void Start()
     {
         //メインカメラとサブカメラをそれぞれ取得
@@ -22,11 +28,17 @@ public class SikakuCamera : MonoBehaviour
 
     void Update()
     {
-        //スペースキーが押されてから
-        if (Input.GetKeyDown(KeyCode.P)&& !SikakuSkillflg && SikakuCameraflg)
+
+        WriteCount = itempoint.Gettyoukakucount();
+        if (WriteCount == true)
         {
-            StartCoroutine("SikakuSkill");
-            SikakuCameraflg = false;
+            if (!isCalledOnce1)
+            {
+                isCalledOnce1 = true;
+                StartCoroutine("SikakuSkill");
+                SikakuCameraflg = false;
+            }
+            
         }
 
     }

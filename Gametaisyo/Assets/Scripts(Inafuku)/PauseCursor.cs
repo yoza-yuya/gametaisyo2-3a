@@ -55,7 +55,7 @@ public class PauseCursor : MonoBehaviour
 
     void Update()
     {
-        bool start = Input.GetKeyDown("joystick button 7");
+        bool start = Input.GetKeyDown("joystick button 1");
 
         if (start == true && Pausecount == false)
         {

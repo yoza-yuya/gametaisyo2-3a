@@ -2375,6 +2375,12 @@ MonoBehaviour:
   bulletPrefab: {fileID: 8665736454254402085, guid: 4605613f5cf063648b52b30c185f51db,
     type: 3}
   shotSpeed: 700
+--- !u!1 &1017655190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1017939227759990555, guid: 665ed8ad9a66f0746a5fdcb58f8f69da,
+    type: 3}
+  m_PrefabInstance: {fileID: 679302027}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1022499208
 GameObject:
   m_ObjectHideFlags: 0
@@ -3911,7 +3917,7 @@ MonoBehaviour:
   batten3: {fileID: 536517403}
   batten4: {fileID: 341167707}
   tate: {fileID: 1207775757}
-  tate4: {fileID: 0}
+  tate4: {fileID: 1017655190}
   gameovercount: 0
 --- !u!114 &1600917328
 MonoBehaviour:

@@ -15,7 +15,7 @@ public class Select : MonoBehaviour
     bool Pausecount = false;
     //public TimeCounter TimeCounter;
 
-    //[SerializeField] private GameObject GameReStartText;
+    [SerializeField] private GameObject GameReStartText;
     [SerializeField] private GameObject TitleBackText;
     [SerializeField] private GameObject ExitText;
 
@@ -42,8 +42,8 @@ public class Select : MonoBehaviour
         //cur = curObj.GetComponent<Cursor>();
 
         Cursorcount = 1;
-        //Text text1 = GameReStartText.GetComponent<Text>();
-        //text1.color = new Color(1.0f, 0.0f, 0.0f, 1.0f);
+        Text text1 = GameReStartText.GetComponent<Text>();
+        text1.color = new Color(1.0f, 0.0f, 0.0f, 1.0f);
 
 
         //if (DontDestroyEnabled)
@@ -128,18 +128,18 @@ public class Select : MonoBehaviour
 
 
             //カーソルカウントが1
-            //if (Cursorcount == 1)
-            //{
-            //    Text text1 = GameReStartText.GetComponent<Text>();
-            //    text1.color = new Color(1.0f, 0.0f, 0.0f, 1.0f);
-            //}
+            if (Cursorcount == 1)
+            {
+                Text text1 = GameReStartText.GetComponent<Text>();
+                text1.color = new Color(1.0f, 0.0f, 0.0f, 1.0f);
+            }
 
-            ////カーソルカウントが1じゃない時の操作
-            //else if (Cursorcount != 1)
-            //{
-            //    Text text1 = GameReStartText.GetComponent<Text>();
-            //    text1.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
-            //}
+            //カーソルカウントが1じゃない時の操作
+            else if (Cursorcount != 1)
+            {
+                Text text1 = GameReStartText.GetComponent<Text>();
+                text1.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+            }
 
             //カーソルカウントが2
             if (Cursorcount == 2)
@@ -180,11 +180,11 @@ public class Select : MonoBehaviour
             bool kettei = Input.GetKeyDown("joystick button 0");
 
 
-            //if (kettei == true && Cursorcount == 1)
-            //{
-            //    Time.timeScale = 1;
-            //    StartCoroutine("GoToGameScene");
-            //}
+            if (kettei == true && Cursorcount == 1)
+            {
+                Time.timeScale = 1;
+                StartCoroutine("GoToGameScene");
+            }
             if (kettei == true && Cursorcount == 2)
             {
                 Time.timeScale = 1;
@@ -220,12 +220,12 @@ public class Select : MonoBehaviour
 
 
     }
-    //IEnumerator GoToGameScene()
-    //{
-    //    Time.timeScale = 1;
-    //    yield return new WaitForSeconds(0.57f);
-    //    SceneManager.LoadScene("SampleScene");
-    //}
+    IEnumerator GoToGameScene()
+    {
+        Time.timeScale = 1;
+        yield return new WaitForSeconds(0.57f);
+        SceneManager.LoadScene("SampleScene");
+    }
 
     IEnumerator GoToTitleScene()
     {

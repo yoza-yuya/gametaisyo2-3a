@@ -36,6 +36,10 @@ public class ItemPoint : MonoBehaviour
         return tyoukakucount;
     }
 
+    public bool Getkyuukakucount()
+    {
+        return kyuukakucount;
+    }
 
 
     void Start()

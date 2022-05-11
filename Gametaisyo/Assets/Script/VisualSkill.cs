@@ -55,9 +55,11 @@ public class VisualSkill : MonoBehaviour
         }
         if (i >= 1)
         {
+            Debug.Log("ああああ");
             time += Time.deltaTime;
             if (area.x <= 200)
             {
+                Debug.Log("いいいい");
                 area.x = area.x + Area;
                 area.y = area.y + Area;
                 area.z = area.z + Area;
@@ -66,6 +68,7 @@ public class VisualSkill : MonoBehaviour
         }
         if (time >= AreaTime)
         {
+            Debug.Log("うううう");
             time = 0f;
             area.x = 0;
             area.y = 0;

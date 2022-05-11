@@ -49,7 +49,7 @@ public class SikakuCamera : MonoBehaviour
         mainCamera.SetActive(false);
         subCamera.SetActive(true);
         Debug.Log("On");
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(90);
         //メインカメラをアクティブに設定
         mainCamera.SetActive(true);
         subCamera.SetActive(false);

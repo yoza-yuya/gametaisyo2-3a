@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemPoint : MonoBehaviour
 {
@@ -9,8 +10,9 @@ public class ItemPoint : MonoBehaviour
     public bool tyoukakucount = false;
     public bool syokkakucount = false;
     public bool kyuukakucount = false;
+    private int nowitemcount;
+    public Text CountText;
 
-    
 
     //味覚
     public bool Getmikakucount()
@@ -40,7 +42,8 @@ public class ItemPoint : MonoBehaviour
 
     void Start()
     {
-        
+        nowitemcount = 0;
+        CountText.text = "Count: 0";
     }
 
     // Update is called once per frame
@@ -54,6 +57,8 @@ public class ItemPoint : MonoBehaviour
         if (collider.gameObject.tag == "Item(mikaku)")
         {
             Debug.Log("味覚のアイテム取れたよ");
+            nowitemcount = nowitemcount + 1;
+            CountText.text = "Count: " + nowitemcount.ToString();
             mikakucount = true;
         }
 
@@ -61,6 +66,8 @@ public class ItemPoint : MonoBehaviour
         if (collider.gameObject.tag == "Item(syokkaku)")
         {
             Debug.Log("触覚のアイテム取れたよ");
+            nowitemcount = nowitemcount + 1;
+            CountText.text = "Count: " + nowitemcount.ToString();
             syokkakucount = true;
         }
 
@@ -68,13 +75,18 @@ public class ItemPoint : MonoBehaviour
         if (collider.gameObject.tag == "Item(tyoukaku)")
         {
             Debug.Log("聴覚のアイテム取れたよ");
+            nowitemcount = nowitemcount + 1;
+            CountText.text = "Count: " + nowitemcount.ToString();
             tyoukakucount = true;
         }
 
         //視覚(緑色の玉)
         if (collider.gameObject.tag == "Item(sikaku)")
         {
+
             Debug.Log("視覚のアイテム取れたよ");
+            nowitemcount = nowitemcount + 1;
+            CountText.text = "Count: " + nowitemcount.ToString();
             sikakucount = true;
         }
 
@@ -82,6 +94,8 @@ public class ItemPoint : MonoBehaviour
         if (collider.gameObject.tag == "Item(kyuukaku)")
         {
             Debug.Log("嗅覚のアイテム取れたよ");
+            nowitemcount = nowitemcount + 1;
+            CountText.text = "Count: " + nowitemcount.ToString();
             kyuukakucount = true;
         }
     }

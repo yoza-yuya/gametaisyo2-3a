@@ -4,22 +4,41 @@ using UnityEngine;
 
 public class ItemPoint : MonoBehaviour
 {
-    public int mikakucount = 0;
-    public int sikakucount = 0;
-    public int tyoukakucount = 0;
-    public int syokkakucount = 0;
-    public int kyuukakucount = 0;
+    public bool mikakucount = false;
+    public bool sikakucount = false;
+    public bool tyoukakucount = false;
+    public bool syokkakucount = false;
+    public bool kyuukakucount = false;
 
     
 
-    public int Getmikakucount()
+    //味覚
+    public bool Getmikakucount()
     {
         return mikakucount;
     }
 
-    //public Health Health;
+    //視覚
+    public bool Getsikakucount()
+    {
+        return sikakucount;
+    }
 
-       void Start()
+    //触覚
+    public bool Getsyokkakucount()
+    {
+        return syokkakucount;
+    }
+
+    //聴覚
+    public bool Gettyoukakucount()
+    {
+        return tyoukakucount;
+    }
+
+
+
+    void Start()
     {
         
     }
@@ -31,17 +50,39 @@ public class ItemPoint : MonoBehaviour
     }
     private void OnTriggerEnter(Collider collider)
     {
-        //味覚
+        //味覚(青色の玉)
         if (collider.gameObject.tag == "Item(mikaku)")
         {
             Debug.Log("味覚のアイテム取れたよ");
-            mikakucount = 2;
+            mikakucount = true;
         }
+
         //触覚
         if (collider.gameObject.tag == "Item(syokkaku)")
         {
-            Debug.Log("味覚のアイテム取れたよ");
-            syokkakucount = 2;
+            Debug.Log("触覚のアイテム取れたよ");
+            syokkakucount = true;
+        }
+
+        //聴覚
+        if (collider.gameObject.tag == "Item(tyoukaku)")
+        {
+            Debug.Log("聴覚のアイテム取れたよ");
+            tyoukakucount = true;
+        }
+
+        //視覚(緑色の玉)
+        if (collider.gameObject.tag == "Item(sikaku)")
+        {
+            Debug.Log("視覚のアイテム取れたよ");
+            sikakucount = true;
+        }
+
+        //嗅覚
+        if (collider.gameObject.tag == "Item(kyuukaku)")
+        {
+            Debug.Log("嗅覚のアイテム取れたよ");
+            kyuukakucount = true;
         }
     }
 }

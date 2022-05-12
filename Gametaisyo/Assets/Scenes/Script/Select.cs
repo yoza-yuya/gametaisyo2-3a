@@ -55,7 +55,7 @@ public class Select : MonoBehaviour
 
     void Update()
     {
-        bool start = Input.GetKeyDown("joystick button 7");
+        bool start = Input.GetKeyDown("joystick button 3");
 
         if (start == true && Pausecount == false)
         {

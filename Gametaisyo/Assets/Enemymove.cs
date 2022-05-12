@@ -50,6 +50,7 @@ public class Enemymove : MonoBehaviour
             {
                 AttackFlag = false;
                 WarpFlag = false;
+                point = Random.Range(0, 12);
                 _agent.SetDestination(waypoints[point].position);
                 _agent.speed = 3.5f;
                 CoolTime = 0f;
@@ -61,7 +62,6 @@ public class Enemymove : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             WarpFlag = true;
-            this.transform.position = waypoints[Random.Range(0, 11)].position;
             Debug.Log("当たった");
             _agent.speed = 0f;
             AttackFlag = true;

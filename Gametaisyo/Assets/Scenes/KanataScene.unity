@@ -1541,7 +1541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_Constraints
-      value: 14
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_JumpSpeed
@@ -2172,6 +2172,9 @@ MonoBehaviour:
   - {fileID: 1805429847}
   - {fileID: 1096703195}
   - {fileID: 1445884978}
+  - {fileID: 1445884978}
+  - {fileID: 1445884978}
+  - {fileID: 1445884978}
 --- !u!135 &873503975
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2183,7 +2186,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 15
+  m_Radius: 12
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &907904946
 GameObject:

@@ -111,9 +111,9 @@ public class Health : MonoBehaviour
 
         //HPが０になったらゲームオーバーにいく
         if (nowHp <= 0)
-        {
-            //Debug.Log("GameOver");
-            //SceneManager.LoadScene("GameOver");
+        {            Debug.Log("GameOver");
+            SceneManager.LoadScene("GameOverScene");
+
             gameovercount = true;
         }
 

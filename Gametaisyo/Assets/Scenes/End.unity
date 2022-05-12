@@ -539,7 +539,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1315534302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  gameclear: {fileID: 1759845794}
+  goal: {fileID: 0}
 --- !u!135 &1759845796
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -762,7 +762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  gameclear: {fileID: 2004334393}
+  goal: {fileID: 0}
 --- !u!135 &2004334395
 SphereCollider:
   m_ObjectHideFlags: 0

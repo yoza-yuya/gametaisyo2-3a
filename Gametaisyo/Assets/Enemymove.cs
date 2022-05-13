@@ -12,6 +12,7 @@ public class Enemymove : MonoBehaviour
     private NavMeshAgent _agent;
     EnemyDetection ene3;
     public Transform target;
+    public int Size = 33;
     public GameObject Sphere;
     private float CoolTime;
     private bool AttackFlag = false;
@@ -65,6 +66,10 @@ public class Enemymove : MonoBehaviour
             Debug.Log("当たった");
             _agent.speed = 0f;
             AttackFlag = true;
+        }
+        if (other.gameObject.tag == "Bullet")
+        {
+            this.transform.position = waypoints[Random.Range(0,3)].position;
         }
     }
 }

@@ -10,9 +10,24 @@ public class Tyuukaku : MonoBehaviour
     // カーソル
     [SerializeField] Transform cursor;
 
+    bool TyuukakuSkillflg = false;    //コルーチンフラグ
+    bool TyuukakuCameraflg = true;
+    private GameObject mainCamera;      //メインカメラ格納用
+    private GameObject subCamera;       //サブカメラ格納用
+
     public ItemPoint itempoint;
     public bool YellowCount;
     bool isCalledOnce1 = false;
+
+    void Start()
+    {
+        //メインカメラとサブカメラをそれぞれ取得
+        mainCamera = GameObject.Find("MiniMapCamera");
+        subCamera = GameObject.Find("TyuukakuMapCamera");
+
+        //サブカメラを非アクティブにする
+        subCamera.SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
@@ -30,6 +45,20 @@ public class Tyuukaku : MonoBehaviour
         }
     }
 
+    IEnumerator TyuukakuSkill()
+    {
+        TyuukakuSkillflg = true;
+        //サブカメラをアクティブに設定
+        mainCamera.SetActive(false);
+        subCamera.SetActive(true);
+        Debug.Log("On");
+        yield return new WaitForSeconds(90);
+        //メインカメラをアクティブに設定
+        mainCamera.SetActive(true);
+        subCamera.SetActive(false);
+        TyuukakuSkillflg = false;
+        Debug.Log("Off");
+    }
 
     IEnumerator GoalLood()
     {

@@ -17,7 +17,8 @@ public class Enemymove : MonoBehaviour
     private bool AttackFlag = false;
     public bool WarpFlag = false;
     // 現在の目的地
-    private int point;
+    private int point = 0;
+    public int Size = 0;
     void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
@@ -50,7 +51,7 @@ public class Enemymove : MonoBehaviour
             {
                 AttackFlag = false;
                 WarpFlag = false;
-                point = Random.Range(0, 12);
+                point = Random.Range(0, Size);
                 _agent.SetDestination(waypoints[point].position);
                 _agent.speed = 3.5f;
                 CoolTime = 0f;

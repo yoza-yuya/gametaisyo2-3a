@@ -10,8 +10,8 @@ public class ItemPoint : MonoBehaviour
     public bool tyoukakucount = false;
     public bool syokkakucount = false;
     public bool kyuukakucount = false;
-    private int nowitemcount;
-    public Text CountText;
+    //private int nowitemcount;
+    //public Text CountText;
 
 
     //味覚
@@ -44,11 +44,11 @@ public class ItemPoint : MonoBehaviour
     }
 
 
-    void Start()
-    {
-        nowitemcount = 0;
-        CountText.text = "Count: 0";
-    }
+    //void Start()
+    //{
+    //    nowitemcount = 0;
+    //    CountText.text = "Count: 0";
+    //}
 
     // Update is called once per frame
     void Update()
@@ -61,8 +61,8 @@ public class ItemPoint : MonoBehaviour
         if (collider.gameObject.tag == "Item(mikaku)")
         {
             Debug.Log("味覚のアイテム取れたよ");
-            nowitemcount = nowitemcount + 1;
-            CountText.text = "Count: " + nowitemcount.ToString();
+            //nowitemcount = nowitemcount + 1;
+            //CountText.text = "Count: " + nowitemcount.ToString();
             mikakucount = true;
         }
 
@@ -70,8 +70,8 @@ public class ItemPoint : MonoBehaviour
         if (collider.gameObject.tag == "Item(syokkaku)")
         {
             Debug.Log("触覚のアイテム取れたよ");
-            nowitemcount = nowitemcount + 1;
-            CountText.text = "Count: " + nowitemcount.ToString();
+            //nowitemcount = nowitemcount + 1;
+            //CountText.text = "Count: " + nowitemcount.ToString();
             syokkakucount = true;
         }
 
@@ -79,8 +79,8 @@ public class ItemPoint : MonoBehaviour
         if (collider.gameObject.tag == "Item(tyoukaku)")
         {
             Debug.Log("聴覚のアイテム取れたよ");
-            nowitemcount = nowitemcount + 1;
-            CountText.text = "Count: " + nowitemcount.ToString();
+            //nowitemcount = nowitemcount + 1;
+            //CountText.text = "Count: " + nowitemcount.ToString();
             tyoukakucount = true;
         }
 
@@ -89,8 +89,8 @@ public class ItemPoint : MonoBehaviour
         {
 
             Debug.Log("視覚のアイテム取れたよ");
-            nowitemcount = nowitemcount + 1;
-            CountText.text = "Count: " + nowitemcount.ToString();
+            //nowitemcount = nowitemcount + 1;
+            //CountText.text = "Count: " + nowitemcount.ToString();
             sikakucount = true;
         }
 
@@ -98,8 +98,8 @@ public class ItemPoint : MonoBehaviour
         if (collider.gameObject.tag == "Item(kyuukaku)")
         {
             Debug.Log("嗅覚のアイテム取れたよ");
-            nowitemcount = nowitemcount + 1;
-            CountText.text = "Count: " + nowitemcount.ToString();
+            //nowitemcount = nowitemcount + 1;
+            //CountText.text = "Count: " + nowitemcount.ToString();
             kyuukakucount = true;
         }
     }

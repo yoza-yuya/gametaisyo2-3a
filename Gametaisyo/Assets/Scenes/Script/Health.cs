@@ -41,11 +41,11 @@ public class Health : MonoBehaviour
     bool isCalledOnce1 = false;
     bool isCalledOnce2 = false;
 
-    public bool gameovercount = false;
-    public bool Getgameovercount()
-    {
-        return gameovercount;
-    }
+    //public bool gameovercount = false;
+    //public bool Getgameovercount()
+    //{
+    //    return gameovercount;
+    //}
 
     void Start()
     {
@@ -115,7 +115,7 @@ public class Health : MonoBehaviour
         {
             Debug.Log("GameOver");
             SceneManager.LoadScene("GameOverScene");
-            gameovercount = true;
+            
         }
 
         

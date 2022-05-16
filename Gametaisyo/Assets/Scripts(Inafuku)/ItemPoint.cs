@@ -10,8 +10,8 @@ public class ItemPoint : MonoBehaviour
     public bool tyoukakucount = false;
     public bool syokkakucount = false;
     public bool kyuukakucount = false;
-    //private int nowitemcount;
-    //public Text CountText;
+    private int nowitemcount;
+    public Text CountText;
 
 
     //味覚
@@ -44,11 +44,11 @@ public class ItemPoint : MonoBehaviour
     }
 
 
-    //void Start()
-    //{
-    //    nowitemcount = 0;
-    //    CountText.text = "Count: 0";
-    //}
+    void Start()
+    {
+        //nowitemcount = 0;
+        //CountText.text = "Count: 0";
+    }
 
     // Update is called once per frame
     void Update()

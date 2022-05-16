@@ -12,6 +12,7 @@ public class EnemyWarp : MonoBehaviour
     private bool WarpFlag2;
     private bool warpflag;
     private int num;
+    public int Size2 = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +38,7 @@ public class EnemyWarp : MonoBehaviour
             {
                 if (other.gameObject.tag == "Player")
                 {
-                    num = Random.Range(0, 12);
+                    num = Random.Range(0, Size2);
                     Enemy.transform.position = waypoints2[num].position;
                 }
             }

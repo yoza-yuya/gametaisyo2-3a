@@ -19,7 +19,6 @@ public class Enemymove : MonoBehaviour
     public bool WarpFlag = false;
     // 現在の目的地
     private int point = 0;
-    public int Size = 0;
     void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
@@ -70,7 +69,7 @@ public class Enemymove : MonoBehaviour
         }
         if (other.gameObject.tag == "Bullet")
         {
-            this.transform.position = waypoints[Random.Range(0,3)].position;
+            this.transform.position = waypoints[Random.Range(0,Size)].position;
         }
     }
 }

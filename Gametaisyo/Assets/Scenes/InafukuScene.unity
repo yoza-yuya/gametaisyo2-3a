@@ -1842,7 +1842,6 @@ MonoBehaviour:
   batten4: {fileID: 999288027}
   tate: {fileID: 1946681299}
   tate4: {fileID: 0}
-  gameovercount: 0
 --- !u!114 &2103335952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2062,6 +2061,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlackPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 2826553859674641097, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: d1c4bab5e88f0fe4c93c7d7926638089,
+        type: 3}
     - target: {fileID: 2935232999556553699, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2,
         type: 3}
       propertyPath: m_AnchoredPosition.x

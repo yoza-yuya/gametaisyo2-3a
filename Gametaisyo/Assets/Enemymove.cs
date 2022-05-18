@@ -67,5 +67,11 @@ public class Enemymove : MonoBehaviour
             _agent.speed = 0f;
             AttackFlag = true;
         }
+
+        if (other.gameObject.tag == "Bullet")
+        {
+            point = Random.Range(0, Size);
+            this.transform.position = waypoints[point].position;
+        }
     }
 }

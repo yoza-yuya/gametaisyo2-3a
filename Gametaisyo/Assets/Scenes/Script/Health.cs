@@ -81,7 +81,7 @@ public class Health : MonoBehaviour
                     {
                         Debug.Log("攻撃を無かったことにするッッッ！！！");
                         notDamage = false;
-                        tateflag = true;
+                        tateflag = false;
                     }
                 }
             }

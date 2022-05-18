@@ -19,15 +19,15 @@ public class Credit1 : MonoBehaviour
 
         if (kettei == true)
         {
-            
-            StartCoroutine("GoToCreditScene");
+            SceneManager.LoadScene("CreditScene2");
+            //StartCoroutine("GoToCreditScene");
         }
     }
 
-    IEnumerator GoToCreditScene()
-    {
+    //IEnumerator GoToCreditScene()
+    //{
         
-        yield return new WaitForSeconds(0.57f);
-        SceneManager.LoadScene("CreditScene2");
-    }
+    //    yield return new WaitForSeconds(0.57f);
+    //    SceneManager.LoadScene("CreditScene2");
+    //}
 }

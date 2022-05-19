@@ -41,11 +41,11 @@ public class Health : MonoBehaviour
     bool isCalledOnce1 = false;
     bool isCalledOnce2 = false;
 
-    public bool gameovercount = false;
-    public bool Getgameovercount()
-    {
-        return gameovercount;
-    }
+    //public bool gameovercount = false;
+    //public bool Getgameovercount()
+    //{
+    //    return gameovercount;
+    //}
 
     void Start()
     {
@@ -60,9 +60,11 @@ public class Health : MonoBehaviour
         //Enemyタグのオブジェクトに触れると
         if (collider.gameObject.tag == "Enemy")
         {
+            Debug.Log("痛い");
             tatchflag = true;
             if (tatchflag == true)
             {
+                Debug.Log("ヒンッ！");
                 af++;//上入力の間加算し続ける
 
                 if (af == 1)//afが加算され続けている時、その値が1の瞬間のみ以下の処理を行う。故に連続入力の対策となる
@@ -81,16 +83,21 @@ public class Health : MonoBehaviour
                     {
                         Debug.Log("攻撃を無かったことにするッッッ！！！");
                         notDamage = false;
-                        tateflag = true;
+                        tateflag = false;
                     }
                 }
             }
+            
         }
-        if (collider.gameObject.tag != "Enemy")
+        else if (collider.gameObject.tag != "Enemy")
         {
             tatchflag = false;
-            af = 0;//スティックが離されるか別入力になったら0にする
+            if (tatchflag == false)
+            {
+                af = 0;
+            }
         }
+
     }
 
 
@@ -102,19 +109,13 @@ public class Health : MonoBehaviour
         
         BlueCount = itempoint.Getmikakucount();
         PurpleCount = itempoint.Getsyokkakucount();
-        //Debug.Log(BlueCount); 
-
-
-        //GameObject PlayerObject = GameObject.Find("PlayerObject");
-        //Blue = PlayerObject.GetComponent<ItemPoint>();
-
-
+        
         //HPが０になったらゲームオーバーにいく
         if (nowHp <= 0)
-        {            Debug.Log("GameOver");
+        {
+            Debug.Log("GameOver");
             SceneManager.LoadScene("GameOverScene");
-
-            gameovercount = true;
+            
         }
 
         
@@ -144,24 +145,6 @@ public class Health : MonoBehaviour
                         break;
 
                 }
-
-                //if (nowHp == 1)
-                //{
-                //    nowHp = nowHp + 1;
-                //    Debug.Log("After currentHp : " + nowHp);
-                //    //BlueCount = 1;
-                //}else if (nowHp == 2)
-                //{
-                //    nowHp = nowHp + 1;
-                //    Debug.Log("After currentHp : " + nowHp);
-                //    //BlueCount = 1;
-                //}
-                //else if (nowHp == 3)
-                //{
-                //    nowHp = 4;
-                //    Debug.Log("After currentHp : " + nowHp);
-                //    yon = true;
-                //}
             }
 
         }
@@ -169,8 +152,6 @@ public class Health : MonoBehaviour
 
         if (yon == true)
         {
-            
-
             if (nowHp == 0)
             {
                 batten1.SetActive(true);
@@ -179,7 +160,6 @@ public class Health : MonoBehaviour
                 batten4.SetActive(true);
 
             }
-
             if (nowHp == 1)
             {
                 batten2.SetActive(true);
@@ -190,7 +170,6 @@ public class Health : MonoBehaviour
 
 
             }
-
             if (nowHp == 2)
             {
                 batten3.SetActive(true);
@@ -198,8 +177,6 @@ public class Health : MonoBehaviour
 
                 batten1.SetActive(false);
                 batten2.SetActive(false);
-
-
             }
 
             if (nowHp == 3)
@@ -232,37 +209,24 @@ public class Health : MonoBehaviour
                 batten1.SetActive(true);
                 batten2.SetActive(true);
                 batten3.SetActive(true);
-                //batten4.SetActive(true);
-
             }
 
             if (nowHp == 1)
             {
                 batten2.SetActive(true);
                 batten3.SetActive(true);
-                //batten4.SetActive(true);
-
                 batten1.SetActive(false);
-
-
             }
 
             if (nowHp == 2)
             {
                 batten3.SetActive(true);
-                //batten4.SetActive(true);
-
                 batten1.SetActive(false);
                 batten2.SetActive(false);
-
-
             }
 
             if (nowHp == 3)
             {
-
-                //batten4.SetActive(true);
-
                 batten1.SetActive(false);
                 batten2.SetActive(false);
                 batten3.SetActive(false);
@@ -295,10 +259,5 @@ public class Health : MonoBehaviour
             tate.SetActive(false);
             tate4.SetActive(false);
         }
-
-
-
-    }
-
-    
+    } 
 }

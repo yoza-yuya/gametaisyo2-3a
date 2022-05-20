@@ -9,6 +9,7 @@ public class ItemTakeRost : MonoBehaviour
 	public AudioClip se;
 	// AudioClip再生用
 	AudioSource audiosource1;
+	public GameObject wall;
 
 	//どこでも実行できるようにする
 	public static ItemTakeRost instance;
@@ -23,42 +24,9 @@ public class ItemTakeRost : MonoBehaviour
 		// AudioSourceコンポーネント取得
 		audiosource1 = GetComponent<AudioSource>();
 
-
 	}
 
-    private void Update()
-    {
-		GameObject goal = GameObject.Find("Goal");
-		GameObject goal1 = GameObject.Find("Goal (1)");
-		GameObject goal2 = GameObject.Find("Goal (2)");
-		GameObject goal3 = GameObject.Find("Goal (3)");
-		GameObject goal4 = GameObject.Find("Goal (4)");
-
-
-		if (GoalCount == 1)
-		{
-			Destroy(goal1);
-
-			if (GoalCount == 2)
-			{
-				Destroy(goal2);
-
-				if (GoalCount == 3)
-				{
-					Destroy(goal3);
-					if (GoalCount == 4)
-					{
-						Destroy(goal4);
-
-					}if (GoalCount == 5)
-						{
-							Destroy(goal);
-
-						}
-				}
-			}
-		}
-	}
+    
     void OnTriggerEnter(Collider other)
 	{
 		// 衝突した相手にPlayerタグが付いているとき
@@ -71,8 +39,41 @@ public class ItemTakeRost : MonoBehaviour
 			//GoalOpenスクリプトの呼び出し
 			GameObject director = GameObject.Find("GameDirector");
 			//director.GetComponent<GoalOpen>().Goalflg();
-			GoalCount++;
+			GoalCount = GoalCount + 1; Debug.Log(GoalCount);
+
+			Destroy(wall);
+
 		}
 
+	}
+	void Update()
+	{
+		GameObject goal = GameObject.Find("Goal");
+		GameObject goal1 = GameObject.Find("Goal (1)");
+		GameObject goal2 = GameObject.Find("Goal (2)");
+		GameObject goal3 = GameObject.Find("Goal (3)");
+		GameObject goal4 = GameObject.Find("Goal (4)");
+
+
+		if (GoalCount == 1)
+		{
+			Destroy(goal1);
+
+			Debug.Log("1触れた");
+		} else if (GoalCount == 2){
+			Destroy(goal2);
+			Debug.Log("2触れた");
+
+		}else if (GoalCount == 3){
+			Destroy(goal3);
+			Debug.Log("3触れた");
+		}else if (GoalCount == 4)
+		{
+			Destroy(goal4);
+
+		}else if (GoalCount == 5){
+			Destroy(goal);
+
+		}
 	}
 }

@@ -2010,6 +2010,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 9021628488405735687, guid: f3882a5bdd870c54abfc724b7a5ccb68,
+        type: 3}
+      propertyPath: m_Name
+      value: Goal(kiiro)
+      objectReference: {fileID: 0}
     - target: {fileID: 9021628488533163631, guid: f3882a5bdd870c54abfc724b7a5ccb68,
         type: 3}
       propertyPath: m_Layer
@@ -4683,7 +4688,7 @@ GameObject:
   - component: {fileID: 431088465}
   - component: {fileID: 431088464}
   m_Layer: 9
-  m_Name: Goal (1)
+  m_Name: Goal (siro)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6628,6 +6633,12 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8543497a445a0a04e8f00c12e16a8292, type: 3}
+--- !u!1 &757197916 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9021628488405735687, guid: f3882a5bdd870c54abfc724b7a5ccb68,
+    type: 3}
+  m_PrefabInstance: {fileID: 179175269}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &761570191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7038,7 +7049,7 @@ GameObject:
   - component: {fileID: 825961441}
   - component: {fileID: 825961440}
   m_Layer: 9
-  m_Name: Goal (3)
+  m_Name: Goal (midori)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7999,7 +8010,7 @@ GameObject:
   - component: {fileID: 907070377}
   - component: {fileID: 907070376}
   m_Layer: 9
-  m_Name: Goal (4)
+  m_Name: Goal (murasaki)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13139,7 +13150,7 @@ GameObject:
   - component: {fileID: 1915861978}
   - component: {fileID: 1915861977}
   m_Layer: 9
-  m_Name: Goal (2)
+  m_Name: Goal (ao)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14492,6 +14503,11 @@ PrefabInstance:
       propertyPath: se
       value: 
       objectReference: {fileID: 8300000, guid: d00f4de2b7f53c945b97c97ea3f904a3, type: 3}
+    - target: {fileID: 8785900798752283594, guid: 1d85ebd9a126e6542ab705c587ac618e,
+        type: 3}
+      propertyPath: wall
+      value: 
+      objectReference: {fileID: 431088462}
     - target: {fileID: 8785900798756555640, guid: 1d85ebd9a126e6542ab705c587ac618e,
         type: 3}
       propertyPath: m_Layer
@@ -14517,6 +14533,11 @@ PrefabInstance:
       propertyPath: se
       value: 
       objectReference: {fileID: 8300000, guid: d00f4de2b7f53c945b97c97ea3f904a3, type: 3}
+    - target: {fileID: 8785900798862842349, guid: 1d85ebd9a126e6542ab705c587ac618e,
+        type: 3}
+      propertyPath: wall
+      value: 
+      objectReference: {fileID: 907070374}
     - target: {fileID: 8785900798873448314, guid: 1d85ebd9a126e6542ab705c587ac618e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14542,11 +14563,21 @@ PrefabInstance:
       propertyPath: se
       value: 
       objectReference: {fileID: 8300000, guid: d00f4de2b7f53c945b97c97ea3f904a3, type: 3}
+    - target: {fileID: 8785900799135065993, guid: 1d85ebd9a126e6542ab705c587ac618e,
+        type: 3}
+      propertyPath: wall
+      value: 
+      objectReference: {fileID: 757197916}
     - target: {fileID: 8785900799303810137, guid: 1d85ebd9a126e6542ab705c587ac618e,
         type: 3}
       propertyPath: se
       value: 
       objectReference: {fileID: 8300000, guid: d00f4de2b7f53c945b97c97ea3f904a3, type: 3}
+    - target: {fileID: 8785900799303810137, guid: 1d85ebd9a126e6542ab705c587ac618e,
+        type: 3}
+      propertyPath: wall
+      value: 
+      objectReference: {fileID: 1915861975}
     - target: {fileID: 8785900799377768576, guid: 1d85ebd9a126e6542ab705c587ac618e,
         type: 3}
       propertyPath: se
@@ -14577,6 +14608,11 @@ PrefabInstance:
       propertyPath: se
       value: 
       objectReference: {fileID: 8300000, guid: d00f4de2b7f53c945b97c97ea3f904a3, type: 3}
+    - target: {fileID: 8785900799596211964, guid: 1d85ebd9a126e6542ab705c587ac618e,
+        type: 3}
+      propertyPath: wall
+      value: 
+      objectReference: {fileID: 825961438}
     - target: {fileID: 8785900800400929078, guid: 1d85ebd9a126e6542ab705c587ac618e,
         type: 3}
       propertyPath: m_LocalPosition.z

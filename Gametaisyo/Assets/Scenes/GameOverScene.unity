@@ -393,7 +393,6 @@ GameObject:
   - component: {fileID: 238208153}
   - component: {fileID: 238208152}
   - component: {fileID: 238208151}
-  - component: {fileID: 238208155}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -483,22 +482,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &238208155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238208150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aa44fa6592be134e8029b0153ead2b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  It: 0
-  i: 0
-  sound: {fileID: 8300000, guid: 335e67b20c672954bb14d856f3d359d2, type: 3}
-  sound2: {fileID: 8300000, guid: fe9cb6bcd45609d4eb87efff68282cd2, type: 3}
 --- !u!1 &944893000
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,7 +934,6 @@ GameObject:
   - component: {fileID: 1412482621}
   - component: {fileID: 1412482624}
   - component: {fileID: 1412482623}
-  - component: {fileID: 1412482622}
   - component: {fileID: 1412482625}
   m_Layer: 5
   m_Name: Image
@@ -979,18 +961,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1412482622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412482620}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c996f524cb711d047b69c487057b71c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1412482623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1188,3 +1158,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1160274133}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2088602664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088602659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa44fa6592be134e8029b0153ead2b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  It: 0
+  i: 0
+  sound: {fileID: 8300000, guid: 2065c1863ae84e2458089f2f623ae99a, type: 3}
+  sound2: {fileID: 8300000, guid: ffbd435638b5b9b489e9a8b22ee33f65, type: 3}

@@ -154,13 +154,13 @@ public class TitleMenu : MonoBehaviour
             
             StartCoroutine("GoToGameScene");
         }
-        //if (kettei == true && Cursorcount == 2)
-        //{
-        //    
+        if (kettei == true && titlecount == 2)
+        {
 
-        //    StartCoroutine("GoToCreditScene");
 
-        //}
+            StartCoroutine("GoToCreditScene");
+
+        }
         if (kettei == true && titlecount == 3)
         {
             StartCoroutine("GameExit");
@@ -178,11 +178,11 @@ public class TitleMenu : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
-    //IEnumerator GoToTitleScene()
-    //{
-    //    yield return new WaitForSeconds(0.57f);
-    //    SceneManager.LoadScene("CreditScene");
-    //}
+    IEnumerator GoToCreditScene()
+    {
+        yield return new WaitForSeconds(0.57f);
+        SceneManager.LoadScene("CreditScene");
+    }
 
     IEnumerator GameExit()
     {

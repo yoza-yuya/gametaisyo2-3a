@@ -188,6 +188,6 @@ public class CreditEnd : MonoBehaviour
     {
         yield return new WaitForSeconds(0.57f);
 
-        Application.Quit();
+        SceneManager.LoadScene("TitleScene");
     }
 }

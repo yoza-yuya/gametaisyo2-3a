@@ -9,10 +9,13 @@ public class Shoot : MonoBehaviour
     public float shotSpeed;
     private float shotInterval;
 
-    private float timeBetweenShot = 3.00f;
+    private float timeBetweenShot = 6.00f;
     private float timer;
-    
 
+    private void Start()
+    {
+        Application.targetFrameRate = 30;
+    }
     void Update()
     {
         timer += Time.deltaTime;

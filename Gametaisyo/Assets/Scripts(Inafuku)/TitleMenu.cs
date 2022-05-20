@@ -146,22 +146,22 @@ public class TitleMenu : MonoBehaviour
         ///カーソルの指して項目を選択した時に実行するコード
 
 
-        bool kettei = Input.GetKeyDown("joystick button 0");
+        bool titlekettei = Input.GetKeyDown("joystick button 0");
 
 
-        if (kettei == true && titlecount == 1)
+        if (titlekettei == true && titlecount == 1)
         {
             
             StartCoroutine("GoToGameScene");
         }
-        //if (kettei == true && Cursorcount == 2)
-        //{
-        //    
+        if (titlekettei == true && titlecount == 2)
+        {
 
-        //    StartCoroutine("GoToCreditScene");
 
-        //}
-        if (kettei == true && titlecount == 3)
+            StartCoroutine("GoToCreditScene");
+
+        }
+        if (titlekettei == true && titlecount == 3)
         {
             StartCoroutine("GameExit");
         }
@@ -178,11 +178,11 @@ public class TitleMenu : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
-    //IEnumerator GoToTitleScene()
-    //{
-    //    yield return new WaitForSeconds(0.57f);
-    //    SceneManager.LoadScene("CreditScene");
-    //}
+    IEnumerator GoToTitleScene()
+    {
+        yield return new WaitForSeconds(0.57f);
+        SceneManager.LoadScene("CreditScene");
+    }
 
     IEnumerator GameExit()
     {

@@ -533,7 +533,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23, y: -157}
+  m_AnchoredPosition: {x: -23, y: -142}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &944893002
@@ -555,7 +555,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 70c7de7e482ef194e948129adf263ed7, type: 3}
     m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
@@ -719,25 +719,63 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlackPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 2826553859674641096, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 155
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826553859674641097, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 70c7de7e482ef194e948129adf263ed7,
+        type: 3}
     - target: {fileID: 2935232999556553699, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2935232999556553699, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 3575633662744066956, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2,
         type: 3}
       propertyPath: m_Text
       value: GameReStart
       objectReference: {fileID: 0}
+    - target: {fileID: 3575633662744066956, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 70c7de7e482ef194e948129adf263ed7,
+        type: 3}
     - target: {fileID: 4100706542296118368, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2,
         type: 3}
       propertyPath: m_Text
       value: Exit
       objectReference: {fileID: 0}
+    - target: {fileID: 4100706542296118368, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 70c7de7e482ef194e948129adf263ed7,
+        type: 3}
+    - target: {fileID: 6099683268225730683, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6455616792982213232, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455616792982213232, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -65
       objectReference: {fileID: 0}
     - target: {fileID: 6914649712015499501, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2,
         type: 3}
@@ -751,6 +789,12 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 7801978849951760718, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 70c7de7e482ef194e948129adf263ed7,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60f4c716ec69b8b4bb11c1b8e8c072d2, type: 3}
 --- !u!1 &1359668636
@@ -809,7 +853,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 70c7de7e482ef194e948129adf263ed7, type: 3}
     m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
@@ -821,7 +865,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Y\u30DC\u30BF\u30F3\u3067\u30E1\u30CB\u30E5\u30FC\u3092\u958B\u304F/\u9589\u3058\u308B\t"
+  m_Text: "START\u30DC\u30BF\u30F3\u3067\u30E1\u30CB\u30E5\u30FC\u3092\u958B\u304F/\u9589\u3058\u308B\t"
 --- !u!222 &1359668639
 CanvasRenderer:
   m_ObjectHideFlags: 0

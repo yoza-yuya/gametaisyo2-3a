@@ -35,7 +35,7 @@ public class GameMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        deathswitch = health.Getgameovercount();
+        //deathswitch = health.Getgameovercount();
         if (deathswitch == true)
         {
             StartCoroutine(ShowImageSecond(ImgGameOver, 2f));
